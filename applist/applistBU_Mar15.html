@@ -1,0 +1,3606 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AMDSB Application Approvals</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="AMDSB Applications Approval Database"/>
+<style type="text/css">
+ul.nav li a, ul.nav li a:visited {
+    color: #1C4A71 !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #1C4A71 !important;
+}
+
+ul.nav li.active a {
+    color: #1C4A71 !important;
+}
+
+p {
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+
+}
+
+.footer-font {
+    color: #FFF;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    text-decoration:none;
+    line-height:17px;
+}
+.footer_titles {
+    color: #CCC;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size:12px;
+
+}
+    .nav { margin-bottom: 0;
+    margin-top: 0;
+
+     }
+
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    a.skip:active,
+    a.skip:focus,
+    a.skip:hover {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+.table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+img { border: 0; }
+
+</style>
+ <style type="text/css">
+#dhtmltooltip{
+position: absolute;
+width: 150px;
+border: 2px solid #426ea0;
+padding: 2px;
+background-color: white;
+visibility: hidden;
+z-index: 100;
+font-size:12px;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+img { border: 0; }
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+
+<script type="text/javascript" class="init">
+$(document).ready(function() {
+    $('#applist').DataTable( {
+        "order": [[ 0, "asc" ]]
+    } );
+} );
+    </script>
+
+</head>
+
+<body>
+<a href="#content" class="skip">Skip to content</a>
+<div class="container-fluid">
+ <div class="row d-block">
+    <div class=".col-100 justify-content-end" style="background-color:#ccffff">
+    <div class="row">
+  <div class="col-sm-10"><h1 align="left" class="p-3 text-black"><br />AMDSB Application Approvals</h1></div>
+  <div class="col-sm-2"><img src=Logo.png alt="AMDSB Logo">
+</form></div>
+</div>
+
+  </div></div>
+
+
+     <div class="row d-block">
+    <div class=".col-100 justify-content-end" style="background-color:#ccffff">
+    <div class="row">
+  <div class="col-sm-10"><h5 align="left" class="p-3 text-black"><p>The AMDSB application database changes frequently.</br>Please note : an application may be approved for all platforms however it may not be available for all platforms.</p></h5></div>
+  <div class="col-sm-2 mt-3"><p>
+                <font color="#000000">Staff, don't see your resource?</font>  <a href="https://amdsb.ebasefm.com/work_orders_it/create" target="_blank">Request it</a>
+                           </p></div>
+</div>
+
+  </div></div>
+
+  <div class="row d-block">
+    <div class=".col-100 justify-content-end" style="background-color:#cccccc">
+  <div class="row">
+  <div class="col-sm-2 align-text-top"><p align="right" class="p-3 text-white"><strong><font size="+1" color="#426ea0">Status Key</font></strong></p></div>
+  <div class="col-sm-10"><font size="-1"><strong>Green: Approved</strong><br /><strong>Yellow: Approved with Caution</strong><br /><strong>Blue: Approved for Staff Only</strong></font></div>
+</div>
+  </div></div>
+
+  </div>
+    <div class="container-fluid">
+    <div class="row .col-xl- p-3 mb-2 bg-light text-dark align-top">
+      <div class="col-12 align-top mb-3 table-responsive justify-content-center">
+
+
+        <table id="applist" class="table table-responsive table-striped table-bordered" width="100%" border="0" cellspacing="0"><thead>
+      <tr>
+        <th align="left" valign="top"><strong><font size="-1">Application</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Status (IOS)</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Status (Google)</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Status (Windows)</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Status (O365)</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Division</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Cost</font></strong></th>
+        <th align="left" valign="top"><strong><font size="-1">Areas of Concern</font></strong></th>
+      </tr></thead>
+      <tbody>
+
+
+
+    <tr>
+        <td>App</td>
+        <td>iOS</td>
+        <td>Google</td>
+        <td>Windows</td>
+        <td>O365</td>
+        <td>Division</td>
+        <td>Cost</td>
+        <td>Areas of Concern</td>
+    </tr>
+ <tr>
+        <td>Lightcast2</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>PlayFactile</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Uses cookies for tracking purposes.</td>
+    </tr>
+<tr>
+        <td>Pexels</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Cyberchase 3D Builder</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Awesome Screenshot Extension App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Google Meet Push to Talk</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Fonts Ninja</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Uses "Cookies", similar technologies and services provided. Limited Privacy Policy</td>
+    </tr>
+<tr>
+        <td>Powtoon</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Collect different types of personal information. May include or offer third party products or services on our website</td>
+    </tr>
+<tr>
+        <td>Haiku Deck</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>If you are not of legal age to form a binding contract (in many jurisdictions, this age is 18), you may only use the Services and disclose information to us with your parents or guardians express consent. Consenting to have your data transferred to and processed in the United States</td>
+    </tr>
+<tr>
+        <td>UnSplash Images</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>The Unsplash Services are not directed to children under the age of 16. Obtaining parental consent is required</td>
+    </tr>
+<tr>
+        <td>Grokspot.org</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Collect information that directly or indirectly identifies you as an individual, including your first and last name, address, email address, user name, persistent identifiers. Obtain verifiable parental consent</td>
+    </tr>
+<tr>
+        <td>Productivity Owl</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Personal information collected.</td>
+    </tr>
+<tr>
+        <td>Playspot Interactive Video</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Personal information collected</td>
+    </tr>
+<tr>
+        <td>Annotate: Web Annotations with Screen Share</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Parent consent is required.</td>
+    </tr>
+<tr>
+        <td>Slides Toolbox</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Personal information collected. Data tracking is enabled.</td>
+    </tr>
+<tr>
+        <td>Whats App</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Not intended for children under 13.
+Personal information from children under 13 years of age is not collected online. Unclear whether use of information is limited to the purpose for which it was collected. Unclear whether this product provides notice in the event of a data breach. Unclear whether users can interact with untrusted users, including strangers and/or adults.</td>
+    </tr>
+<tr>
+        <td>Build a Body Biology System</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Users are under the age of 13 require parental permission. Personal information is collected.</td>
+    </tr>
+<tr>
+        <td>Cell Defense Membrane Game</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Does not knowingly collect any Personal Identifiable Information from children under the age of 13. May share personal information to subsidiaries, resellers, and others. Limited privacy policy.</td>
+    </tr>
+<tr>
+        <td>Talking Points - Teachers</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Parental consent is required. Not intended for children under 13. Personally identifiable information (PII) is collected. Collected information is shared with third parties. Unclear whether parental controls or managed accounts are available.</td>
+    </tr>
+<tr>
+        <td>Talking Points - Parents</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Consent is required. Personally identifiable information (PII) is collected. Collected information is shared with third parties. Unclear whether parental controls or managed accounts are available.</td>
+    </tr>
+<tr>
+        <td>SplashLearn</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Parental consent is required. The Services also use cookies and advertising.</td>
+    </tr>
+<tr>
+        <td>Transcribe</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td bgcolor="#FFFFFF">-</td>
+        <td>All</td>
+        <td></td>
+        <td>Users are under the age of 13 require parental permission. Personal information is collected.</td>
+    </tr>
+<tr>
+        <td>Osmo Apps for IOS</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Factile</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Gizmos</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>TurnitIn</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Kodable</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>e-Comments</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>May use personal identifiable information (First Name and Last Name, Address).Services uses cookies and similar tracking technologies to track the activity on our Service and Application and hold certain information.</td>
+    </tr>
+<tr>
+        <td>Record to Slides (Chrome Extension)</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>May disclose personal identifiable information to 3rd parties. Services uses cookies and similar tracking technologies to track the activity on our Service and Application and hold certain information.</td>
+    </tr>
+<tr>
+        <td>Tween Tribune</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Do not knowingly collect any personal information from those registered on the site as students, or anyone under the age of 13. Teachers are responsible for obtaining and maintaining verifiable parental/legal guardian consent for their students' participation in and use of TTribune, and for the duration of the school year in which the students will be using TTribune. TTribune uses third party advertising and tracks cookies</td>
+    </tr>
+<tr>
+        <td>WeVideo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>The service is not intended for use if you are under 13 years of age unless one of the following is true: (1) you are using a WeVideo education plan ("WeVideo for Schools") or you have the parent of legal guardian consent.</td>
+    </tr>
+<tr>
+        <td>Kami</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>If you are accessing Kami on behalf of a Class, School or District, the following provisions also apply: You represent and warrant that you are solely responsible for complying with the Child Online Privacy Protection Act (COPPA) requirement to secure parental consent for accessing applications which require personal information from children under 13. You may need to obtain verifiable parental consent (Consent) from all parents whose children will be accessing Kami and provide a copy to us upon our request. When obtaining such consent, you undertake to provide parents with a copy of our Privacy Policy.</td>
+    </tr>
+<tr>
+        <td>Band</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>May disclose personal identifiable information to 3rd parties. Services uses cookies and similar tracking technologies to track the activity on our Service and Application and hold certain information."</td>
+    </tr>
+<tr>
+        <td>mLink</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>mBlock</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>IPEVO Presenter</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Bitmoji</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Google Mail Checker</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Google Docs Offline</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Google Drawings</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Grammarly</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Loom for Chrome</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Padlet Mini</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Papercut Mobility Print</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Save to Google Drive</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Fillable Document</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Limited privacy policy.</td>
+    </tr>
+<tr>
+        <td>Google Cast for Education</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Collects information about your activty in our services and about your location.</td>
+    </tr>
+<tr>
+        <td>Infinite Algebra</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Collected information is shared with third parties.</td>
+    </tr>
+<tr>
+        <td>Infinite Geometry</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Collected information is shared with third parties.</td>
+    </tr>
+<tr>
+        <td>Infinite Algebra2</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Collected information is shared with third parties. A user's identity is verified with additional personal information.</td>
+    </tr>
+<tr>
+        <td>Freckle for Renaissance</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Children under the age of 13 are specifically requested to NOT provide any personally identifiable information through this Website. EU-U.S. Privacy Shield Framework certified.</td>
+    </tr>
+<tr>
+        <td>Zoom</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Extreme caution using this App. This App is not recommended for AMDSB students. If used be aware the following Zoom concerns: Personally identifiable information (PII) is collected. Collected information is shared with third parties. A user's identity is verified with additional personal information. Users can interact with untrusted users, including strangers and/or adults.</td>
+    </tr>
+<tr>
+        <td>Kaizena Web App</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>May collect personal information about you such as your
+name, address, phone number, email address,
+instant messaging ID, and credit card information
+may use cookies and other information gathering technologies
+may also obtain other information, including personal
+information, from third parties and combine that with
+information we collect through our Websites</td>
+    </tr>
+<tr>
+        <td>Pinterest Save Button</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Children under 13 are not allowed to use Pinterest.
+Cookies and website tracking is enabled. When you sign up for or use Pinterest you voluntarily
+share certain information including your name,
+email address, phone number, photos, Pins,
+comments, and any other information.</td>
+    </tr>
+<tr>
+        <td>Wakelet</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Only share data with third parties when necessary
+to provide and improve the service, never for advertising or to monetize that data.
+General Data Protection Regulation compliant may track location services.</td>
+    </tr>
+<tr>
+        <td>Google Taskboard</td>
+        <td></td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Monsidio</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Movie Maker Movie Studio</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Print Friendly & PDF</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td>GDPR Compliant</td>
+    </tr>
+<tr>
+        <td>ProWriting Aid Grammar Checker</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td>Cookies and location may be tracked, compliance with the requirements of COPPA (Childrens Online Privacy Protection Act), we do not collect any information from anyone
+under 13 years of age website, products and services are all directed to people who are at least 13 years old or older.</td>
+    </tr>
+<tr>
+        <td>Spiral Clip</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Strive to adhere to EU & U.S. federal and certain state regulations. This includes, but may not be limited to, FERPA, COPPA, and GDPR.</td>
+    </tr>
+<tr>
+        <td>Monsido</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+<tr>
+        <td>AdBlock</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Compliance with the GDPR and the applicable EU laws.</td>
+    </tr>
+<tr>
+        <td>Extensis Fonts</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>May share information with 3rd parties.</td>
+    </tr>
+<tr>
+        <td>Creator Studio</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Poll Everywhere for Google Slides</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Compliance with the Children's Online Privacy Protection Act of 1998 ("COPPA"). Children under 13 should not provide any information on the Site or the Service. Tracks browsing and search history .</td>
+    </tr>
+<tr>
+        <td>Tactiq</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>May collect personal information. May share information with 3rd parties.</td>
+    </tr>
+<tr>
+        <td>Bjorns HTML Explorer</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>May collect personal information. Billing and credit information maybe required. May share information with 3rd parties. Must require parental consent for children under 13.</td>
+    </tr>
+<tr>
+        <td>Show</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>This add-on does not collect any personal information but there is a very limited privacy policy.</td>
+    </tr>
+<tr>
+        <td>Doc to Form</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>This add-on does not collect any personal information but there is no privacy policy.</td>
+    </tr>
+<tr>
+        <td>Chatterpix</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Equatio</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Padiet</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Icons by Noun Project for Docs</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Requires parental consent for children under the age of 16</td>
+    </tr>
+<tr>
+        <td>Soundtrap</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Schoolkitmath</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Privacy statement is very vague.</td>
+    </tr>
+<tr>
+        <td>Razkids</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Requires parental consent for students under the age of 13.</td>
+    </tr>
+<tr>
+        <td>Native Numbers</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Personal identifiable information is collected, only shared if necessary.</td>
+    </tr>
+<tr>
+        <td>Matific</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Personal identifiable information is collected, only shared if necessary.</td>
+    </tr>
+<tr>
+        <td>Icons by Noun Project for Slides</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Requires parental consent for children under the age of 16</td>
+    </tr>
+<tr>
+        <td>Flubaroo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Privacy statement is vague</td>
+    </tr>
+<tr>
+        <td>Autocrat</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Teach Your Monster to Read (IOS)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Alignable (O365)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>EDU Connect (O365)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+<tr>
+        <td>Microsoft Educator Centre (O365)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EduCreations</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Requires parental consent</td>
+    </tr>
+    <tr>
+        <td>Screencastify</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cloudLibrary by bibliotheca</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>JamBoard</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Explain Everything</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Adobe Comp</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>IS</td>
+        <td>$5/licence</td>
+        <td>Ages 13+</td>
+    </tr>
+    <tr>
+        <td>Adobe Photoshop Fix</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>IS</td>
+        <td>$5/licence</td>
+        <td>Ages 13+</td>
+    </tr>
+    <tr>
+        <td>Adobe Photoshop Mix</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Adobe Reader</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Adobe Spark</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>JIS</td>
+        <td>$9.99/month</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Alarm.com (security)</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>Algebra tiles by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Algebra Touch</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Allegion engage technology app</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>Anchor</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Apple Classroom</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bitsboard PRO </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>$27.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Bitsboard Flashcards & Games (Free)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Blockly</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Boardmaker Student Center</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>GDPR Compliant however there is an unclear privacy policy and they do collect personal information. </td>
+    </tr>
+    <tr>
+        <td>Book Creator</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Boom Cards</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Calculator</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Catch a Bouncing Ball - Operations by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Categories with Splingo</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$2.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Certify'em</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Choice Eliminator (addon for Google Forms)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Choice Works </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$9.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Chrome (Google Browser)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CK-12</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Claro PDF (Free Version)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Clicker Connect</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJI</td>
+        <td>$43.99 - iPad, $50.00 - Chrome, $495.00 - WIN</td>
+        <td>Can send promotional emails about new products special offers or other information which we think you may find interesting using the email address that you have provided. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Clicker Sentences</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJI</td>
+        <td>$43.99 - iPad, $50.00 - Chrome, $495.00 - WIN</td>
+        <td>Can send promotional emails about new products special offers or other information which we think you may find interesting using the email address that you have provided. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Colour Tiles</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Colour tiles by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Compress</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data Analysis</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Desmos</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td>Personal information is displayed publicly. Users can interact with trusted users and/or students.</td>
+    </tr>
+    <tr>
+        <td>Destiny Discover</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dice Roll (by William Winkler)</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Doc Appender (add-on for Google Forms)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Doctopus (addon for Google Sheets)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dolphin EasyReader</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free/9.99 per</td>
+        <td>Behavioral or contextual advertising is displayed. Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services. Third parties can use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Dragon Dictation</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DragonBox Algebra 12+</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DragonBox Elements</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>draw.io Diagrams</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dreambox</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Purchased by Learning Services</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dreamscape</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Duolingo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free, Duolingo+ is $9.99 per user</td>
+        <td>Unclear whether data is sold data can be shared for advertising. Unclear if the product uses data to track or sell to third parties. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>easy accents for docs</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Easy Accents for Slides</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Easy Chart HD</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EasyBib Bibliography Creator</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Privacy policies do indicate a version or effective date. Unclear whether data are sold or rented to third parties. Data are shared for advertising or marketing. Behavioral or contextual advertising is displayed. Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services. Third parties can use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Email Notifications for Google Forms</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Endless Reader Free</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EPIC Reading</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td>Unclear whether data is soldunclear whether data is shared. Unclear if product displays contextual advertising and unclear if they are selling user data.</td>
+    </tr>
+    <tr>
+        <td>ePortfolio (D2L)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Essential Elements Interactive</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>COPPA. Children 12 and under must receive consent from their parents.</td>
+    </tr>
+    <tr>
+        <td>Explain Everything - Paid</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>$16.00</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Ezy Graphs</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ezy Trigonometry</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Feedburner (additional Google Service)</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td>Collect information about your activity in our services. Unclear whether the product allows advertising"</td>
+    </tr>
+    <tr>
+        <td>Firefox (for S2 system)</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>FlipGrid</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>School</td>
+        <td>Educators should invite students to create accounts using their board-assigned email address. Explicit parental/guardian consent is required for children under 13 to use the app. Students are unable to share personal profile information on the web; however, educators should direct students not to include personal information or images of themselves or others in the videos they create. Educators can set up "topics" within Flipgrid for students to contribute videos or comment on others' videos. Educators must select "private" instead of "public" topics, and use the "guest password" option to permit parents access to their child's videos. Educators are responsible for making any changes/corrections to student account data. Students must submit requests through their educator for changes to the personal information in their student accounts.</td>
+    </tr>
+    <tr>
+        <td>Flipster</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fluke Connect</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>formLimiter</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Form Ranger (addon for Google Forms)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fraction Strips by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Fractions</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fractions</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td>Personal information is displayed publicly. Unclear whether this product requires parental consent."</td>
+    </tr>
+    <tr>
+        <td>Free Graphing Calculator</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>French Babbel</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>$15.99</td>
+        <td>Ages 4+. Any use by minors without consent is prohibited. Website use and activity is tracked. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>FreshGrade for Teachers</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Garage Band</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Geobee</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Age 4+. Requires parental consent to use the app. They track your network traffic and this is used to analyze trends and activity.</td>
+    </tr>
+    <tr>
+        <td>Geoboard</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Geoboard</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td>"Personal information is displayed publicly. Unclear whether this product requires parental consent. Users can interact with trusted users and/or students.</td>
+    </tr>
+    <tr>
+        <td>Geo Challenge - World Geography Quiz Game (requested for Google Play store)</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Privacy statement is vague </td>
+    </tr>
+    <tr>
+        <td>GeoGebra</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Geometry Pad +</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gizmos</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Glogster - Multimedia Posters</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Go</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Go Talk Now </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$109.00</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Google Cardboard</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Docs</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Drive</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Earth</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Expeditions</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Keep</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google My Business</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td>Requested for controlling the Exeter CEL listing on Google Maps</td>
+    </tr>
+    <tr>
+        <td>Google Read/Write</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Science Journal</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Search</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td>Google Safe search (filtering have been enabled)</td>
+    </tr>
+    <tr>
+        <td>Google Sheets</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Google Slides</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Green Screen by Do Ink</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>JI</td>
+        <td>$3.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Highlight Tool</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HP Reveal</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Hydro One</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>ibis Paint X</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free - 9.99</td>
+        <td>Collect personal information. Behavioral or contextual advertising is displayed.</td>
+    </tr>
+    <tr>
+        <td>iBooks</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>iFactor Quadratics</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Imotion</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>$5.49</td>
+        <td>Does not collect any personal information. No information is shared. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>iMovie</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Injini: Child Development Game Suite</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$39.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>iXL Math</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Up to $600 annual</td>
+        <td>Does not permit children under the age of 13 (""""Child"""") without consent and at the direction of a parent. May share information with our trusted vendors, third party service providers. Does not display any targeted advertising on the Service. Pushed via VPP"</td>
+    </tr>
+    <tr>
+        <td>Kahoot</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td>Unclear whether the product allows advertising</td>
+    </tr>
+    <tr>
+        <td>Khan Academy</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kids A-Z</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Knowledge Hook</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>$19.99</td>
+        <td>Stripped down free version is available. Unclear if collection or use of data is limited to product requirements. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>La Conjugaison</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td>Use your data to advertise and provide analytical information. Intended for adult users. Users under the age of 16 must have parental consent.</td>
+    </tr>
+    <tr>
+        <td>Learn360</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lego Education WeDo 2.0 Full</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lego Mindstorm Commander</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lego Mindstorm Education EV3 Programming</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lexia Core 5</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>App is Free but requires account (see Learning Services)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Lexia PowerUp</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Libby (by Overdrive)</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Loupe Collage</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td>Privacy policy statement is very unclear. Use with caution</td>
+    </tr>
+    <tr>
+        <td>Lucidchart Diagrams</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Privacy policies do indicate a version or effective date. Data are not sold or rented to third parties. Data are not shared for advertising or marketing. Behavioral or contextual advertising is displayed. Data are collected by third-party advertising or tracking services. Unclear whether this product uses data to track and target advertisements on other third-party websites or services. Unclear whether this product allows third parties to use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Lumosity</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Not recommended for under 13. Third parties can use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Mail merge for avery lables</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Math Academy</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Math Prodigy</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td>Unclear whether the product allows advertising</td>
+    </tr>
+    <tr>
+        <td>MathPad (Script Calculator)</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MindMeister</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mindomo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mindomo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free/$5.99</td>
+        <td>Collect personal information. First name last name and email address. Collect information on your location. Requires parental consent for 13 years and younger. Consistent with COPPA and GDPR. Pushed via VPP.</td>
+    </tr>
+    <tr>
+        <td>Minecraft EDU</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Money by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Money by Mathies</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>More Fun with Directions HD </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$21.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>MS Excel</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MS OneDrive</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MS OneNote</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MS PowerPoint</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MS Word</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>My BluePrint Classpass</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>JIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>myBlueprint Class Pass</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>myHomework Student Planner</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Unclear whether this product allows third parties to use data to create ad profiles data enhancement and/or targeted advertisements. Unclear privacy policy. Unclear if data collection is limited to the use of product requirements."</td>
+    </tr>
+    <tr>
+        <td>My First AAC </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$34.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>My Play Home </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$5.49</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>nconfig clarity pro (acuity nlight apps)</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>Nearpod</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Newsela</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Notability</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>$16.99</td>
+        <td>Does not track personal information. Collects data to provide advertisements.</td>
+    </tr>
+    <tr>
+        <td>Notepad by Mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number Frames</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>P</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number Line</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Number line</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td>Personal information is displayed publicly. Unclear whether this product requires parental consent. Users can interact with trusted users and/or students.</td>
+    </tr>
+    <tr>
+        <td>Number pieces</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td>Personal information is displayed publicly. Unclear whether this product requires parental consent. Users can interact with trusted users and/or students.</td>
+    </tr>
+    <tr>
+        <td>Number Pieces Basic</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>O365 'Apple Internet Accounts' App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>O365 'Teams'</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>All included in A3 license and MOU.</td>
+    </tr>
+    <tr>
+        <td>O365 'Smartdraw Cloud' App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>All included in A3 license and MOU.</td>
+    </tr>
+    <tr>
+        <td>O365 'Stream'</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>All included in A3 license and MOU.</td>
+    </tr>
+    <tr>
+        <td>O365 'Yammer'</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>All included in A3 license and MOU.</td>
+    </tr>
+    <tr>
+        <td>O365 'Showbie' App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>O365 'VRT Login Portal' App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Orange Slice</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Overdrive</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Paper by WeTransfer</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td>You are only allowed to use our website apps and/or Services when aged 16 and over. Contact information is collected.</td>
+    </tr>
+    <tr>
+        <td>Path</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pattern blocks by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Pattern Shapes</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pear Deck</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pear Deck for Google Slides</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pic Collage</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pixton Comic Maker</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Plickers</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Pocket Pond 2 Free</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Popplet</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>$6.99</td>
+        <td>Uses data for analytics. Personal data can be collected to provide services to sell goods.</td>
+    </tr>
+    <tr>
+        <td>Popplet Lite</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PowerSchool Learning</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PowerTeacher</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Probability Tools - Paid</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Promethean Chromebox Utility</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Puffin</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Puppet Pals - Paid</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>QR Reader</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Quick Graph + Free</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Quick Graph + Paid</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Quiver</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Compliant with GDPR</td>
+    </tr>
+    <tr>
+        <td>Quizlet</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td>Behavioral or contextual advertising is displayed. Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services.</td>
+    </tr>
+    <tr>
+        <td>Quizizz: Play to Learn</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Read and Write for Google Chrome</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Recorder</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Rekenrek by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Rekenrek by Mathies</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Relational rods by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Remind</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td>Users can interact with trusted users and/or students</td>
+    </tr>
+    <tr>
+        <td>Representation Match - Fractions by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Representation Match - Whole Numbers by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Scholastic Playground</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td>Unclear whether data are sold or rented to third parties. Data are shared for advertising or marketing. Data are used to track and target advertisements on other third-party websites or services.</td>
+    </tr>
+    <tr>
+        <td>Scratch Jr.</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Screenshot reader</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Seesaw</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Set Tool</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJ</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Set tool by mathies</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Ages 4+.</td>
+    </tr>
+    <tr>
+        <td>Schoology</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free - $10.00 per student</td>
+        <td>Unclear whether data are sold or rented to third parties. Data are shared for advertising or marketing. Unclear whether this product displays behavioral or contextual advertising. Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services. Unclear whether this product allows third parties to use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Screenplay Formatter</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ScootPad</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Showbie</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td>Uses contextual advertising. Data is collected by third party advertising data is tracked third parties can use data to create profiles"</td>
+    </tr>
+    <tr>
+        <td>Sketchpad Explorer + - Paid</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SketchUp</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>used to be Windows installed app, expiring Nov 20 2019</td>
+    </tr>
+    <tr>
+        <td>Slip-in-Slide</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Slope Slider</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SMART Learning Suite</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Smiling Mind</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Unclear whether data are shared for advertising and/or marketing. Behavioral or contextual advertising is displayed. Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services. Unclear whether this product allows third parties to use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Snapverter</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Socrative – Student</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Socrative – Teacher</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sphero Edu</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Uses your data to get your parent/guardian consent to set up an account. Parental consent is required. Fully compliant with COPPA and GDPR.</td>
+    </tr>
+    <tr>
+        <td>Starfall Numbers</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$6.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>StopMotion Studio</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>$6.99</td>
+        <td>Compliant with COPPA. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Sumo Paint</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes</td>
+    </tr>
+    <tr>
+        <td>Teachtown - Primary Basics</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Texthelp PDF Reader App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>The Calculator</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ThingLink</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>The terms state that ThingLink recognizes that children under 13 may use the service under the supervision of a parent or an educational institution acting as an agent of their parent. When that happens ThinkLink's terms state they take additional precautions to protect the privacy of children under 13.</td>
+    </tr>
+    <tr>
+        <td>Tickle</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>JI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tinycards</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td>Unclear whether data is sold data can be shared for advertising. Unclear if the product uses data to track or sell to third parties. Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>Toca Store </td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td></td>
+        <td>$3.99</td>
+        <td>Pushed via VPP</td>
+    </tr>
+    <tr>
+        <td>TypingClub</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Behavioral or contextual advertising is displayed.Data are collected by third-party advertising or tracking services. Data are used to track and target advertisements on other third-party websites or services. Third parties can use data to create ad profiles data enhancement and/or targeted advertisements.</td>
+    </tr>
+    <tr>
+        <td>Units +</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Vatefaireconjuguer</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>May share data with partners. GDPR Compliant.</td>
+    </tr>
+    <tr>
+        <td>Veescope Live</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>Free</td>
+        <td>Unclear privacy policy but they do not collect personal information. Unclear if data collection is limited to the use of product requirements.</td>
+    </tr>
+    <tr>
+        <td>VideoPad Video Editor</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td>Free</td>
+        <td>Accordingly we do not intend to collect Personal Information from anyone we know to be under 13 years of age.</td>
+    </tr>
+    <tr>
+        <td>VLC Player (sewer camera video)</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td bgcolor="#2E9AFE">Blue</td>
+        <td>Staff ONLY</td>
+        <td>Free</td>
+        <td>Staff can add these apps via their Apple ID</td>
+    </tr>
+    <tr>
+        <td>WeDo 2.0 Lego Ed</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Wonder</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Word Reference Dictionary</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Word Reference Socrates</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJIS</td>
+        <td>Free</td>
+        <td>Unclear whether the product allows advertising</td>
+    </tr>
+    <tr>
+        <td>Xylo</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>PJI</td>
+        <td>Free</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Yet Another Mail Merge</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>IS</td>
+        <td>Free</td>
+        <td>Google Add On Service</td>
+    </tr>
+    <tr>
+        <td>Online Voice Recorder</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Limited privacy policy. Third party service providers may use your information for ads placement and notifications.</td>
+    </tr>
+    <tr>
+        <td>Dyslexie Font</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>ALL</td>
+        <td>School</td>
+        <td>Limited privacy policy. Third party service providers may use your information for ads placement and notifications. There are concerns with the free service. Personal credit card may be required. End user should take caution using this system.</td>
+    </tr>
+          <tr>
+        <td>TouchCast Studio</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>ALL</td>
+        <td>School</td>
+        <td>Third party service providers may use your information for ads placement and notifications. Will use cookies for tracking</td>
+    </tr>
+    <tr>
+        <td>Think 3D</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Extremely limited privacy policy.</td>
+    </tr>
+    <tr>
+        <td>HudsonAlpha iCell</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Limited privacy policy</td>
+    </tr>
+          <tr>
+        <td>Cool Times Tables Flash Cards</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Limited privacy policy. May contain Ads.</td>
+    </tr>
+    <tr>
+        <td>VerbEx</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Limited privacy policy. Third party service providers may use your information for ads placement and notifications. Will use cookies for tracking</td>
+    </tr>
+    <tr>
+        <td>Roblox</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Caution: Registered users interact with other users through in-game or website chat, personal messaging (within the Roblox environment), user forums, groups, and other similar features. Strongly recommend that the privacy setting be checked before use. Turn off chat/communications. "SEA student that needs this app for behaviour plan. Needs 'administrator access' to add Roblox app to chromebook. This student and this student only will be using this device." eBase WO #129892</td>
+    </tr>
+    <tr>
+        <td>Toontastic 3D</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td bgcolor="#F4FA58">Yellow</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Outside our G-Suite for Education MOU. Third party service providers may use your information for ads placement and notifications.</td>
+    </tr>
+          -----------------------------------
+          
+    <tr>
+        <td>Mote voice notes and feedback</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bitly - Powerful short links</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Appointment Booking for Google Calendar</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Create and print labels - Avery Label Maker</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Quiver - 3D Coloring App</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Skills Canada</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mail Merge with Attachments</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td>Use other third parties payment processors</td>
+    </tr>
+    <tr>
+        <td>PhET Simulations</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td bgcolor="#00FF40">Green</td>
+        <td>All</td>
+        <td>School</td>
+        <td></td>
+    </tr>      
+          -----------------------------------
+     </tbody>
+</table>

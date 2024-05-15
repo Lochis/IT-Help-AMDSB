@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+/* set global css vars */
+:root {
+  --primary-item-bg: rgb(25,74,111); 
+}
+
+
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+}
+
+.navbar {
+  /*background-color: rgb(25,74,111);*/
+}
+
+.nav-link:hover{
+  color: #EC2C38;
+}
+
+#header-title {
+  color: rgb(25,74,111);
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+ h1 {
+   font-size: 24px;
+ } 
+}
+
