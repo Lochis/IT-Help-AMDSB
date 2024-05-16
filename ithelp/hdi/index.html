@@ -2,22 +2,19 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
+    <script src="./js/index-functions.js"></script>
     <meta charset=" utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How Do I | Avon Maitland DSB Information Technology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="../../css/styles.css" rel="stylesheet">
-    <script src="../../js/index-functions.js"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="icon" href="../../ithelp/images/icon.png">
 </head>
 
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="bootstrap" viewBox="0 0 118 94">
-            <path fill="currentColor" fill-rule="evenodd"
-                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863M60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207M49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281s-3.903-8.178-11.425-8.178H49.948z"
-                clip-rule="evenodd" />
-        </symbol>
+
         <symbol id="check2" viewBox="0 0 16 16">
             <path
                 d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
@@ -37,14 +34,75 @@
         </symbol>
     </svg>
 
-    <header class="container pt-3">
-        <a href="/" class="text-decoration-none">
-            <h1>Avon Maitland Information Technology</h1>
-        </a>
+    <header class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none">
+        <div class="container d-flex">
+            <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none text-success">
+                <div class="d-flex align-items-center">
+                    <img class="align-self-start" width="60rem" src="../../img/home_button.png" />
+                    <h1 id="header-title" class="px-3"><strong>Avon Maitland Information Technology</strong></h1>
+                </div>
+            </a>
+            <div id="theme-toggle" class="nav-item dropdown me-2 flex-shrink-1">
+                <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                    type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                    aria-label="Toggle Theme (dark)">
+                    <svg class="bi my-1 theme-icon-active">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    <span class="" d-lg-none ms-2" id="bd-theme-text"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light" aria-pressed="false">
+                            <svg class="bi me-2 opacity-50">
+                                <use href="#sun-fill"></use>
+                            </svg>
+                            Light
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="dark" aria-pressed="true">
+                            <svg class="bi me-2 opacity-50">
+                                <use href="#moon-stars-fill"></use>
+                            </svg>
+                            Dark
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                            aria-pressed="false">
+                            <svg class="bi me-2 opacity-50">
+                                <use href="#circle-half"></use>
+                            </svg>
+                            Auto
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
     </header>
 
-    <nav class="navbar navbar-expand-md mx-0 mt-3 shadow">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md mx-0 bg-body-tertiary shadow">
+        <div class="container-fluid d-flex">
+            <a href="/ithelp/" class="text-decoration-none text-decoration-none text-success navbar-brand">
+                <div class="d-flex align-items-center">
+                    <img class="align-self-start" width="40rem" src="../../img/home_button.png" />
+                    <h1 id="header-title" class="px-3">Avon Maitland Information Technology</h1>
+                </div>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,33 +110,118 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto gap-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="/hdi/">How Do I?</a>
+                        <a class="nav-link" href="/ithelp/hdi/">
+                            <img id="training-btn" class="img-fluid rounded-4" width="75rem"
+                                src="../images/nav/training.png" />
+                            <!--<h5>How Do I?</h5>-->
+                        </a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" aria-current="page" href="/hdi/getHelp.html">Get Help</a>
+                        <a class="nav-link" target="_blank" aria-current="page"
+                            href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                            <img class="img-fluid rounded-4" width="75rem" src="../images/nav/guidelines.png" />
+                            <!--<h5>TopDesk</h5>-->
+                        </a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Place Holder</a>
+                        <a class="nav-link" target="_blank" aria-current="page"
+                            href="https://amdsb.topdesk.net/tas/public/login/saml">
+                            <!--<h5>IT Guidelines</h5>-->
+                            <img class="img-fluid rounded-4" width="75rem" src="../images/nav/topdesk_staff.png" />
+                        </a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Place Holder</a>
+                        <a class="nav-link" target="_blank" aria-current="page" href="/applist/">
+                            <img class="img-fluid rounded-4" width="75rem"
+                                src="../images/nav/board_approved_apps.png" />
+                            <!--<h5>Approved Tools</h5>-->
+                        </a>
                     </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" target="_blank" aria-current="page"
+                            href="https://amdsb.sharepoint.com/:b:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines/IT%20Price%20List.pdf?csf=1&web=1&e=r2LA21">
+                            <img class="img-fluid rounded-4" width="75rem" src="../images/nav/pricelist.png" />
+                            <!--<h5>it price list</h5>-->
+                        </a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" target="_blank" aria-current="page"
+                            href="https://amdsb.sharepoint.com/:b:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines/IT%20Price%20List.pdf?csf=1&web=1&e=r2LA21">
+                            <img class="img-fluid rounded-4" width="75rem" src="../images/nav/purchasing.png" />
+                            <!--<h5>it price list</h5>-->
+                        </a>
+                    </li>
+                    <div id="theme-toggle-mobile" class="nav-item dropdown">
+                        <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
+                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-label="Toggle Theme (dark)">
+                            <svg class="bi my-1 theme-icon-active">
+                                <use href="#moon-stars-fill"></use>
+                            </svg>
+                            <span class="" d-lg-none ms-2" id="bd-theme-text"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="light" aria-pressed="false">
+                                    <svg class="bi me-2 opacity-50">
+                                        <use href="#sun-fill"></use>
+                                    </svg>
+                                    Light
+                                    <svg class="bi ms-auto d-none">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active"
+                                    data-bs-theme-value="dark" aria-pressed="true">
+                                    <svg class="bi me-2 opacity-50">
+                                        <use href="#moon-stars-fill"></use>
+                                    </svg>
+                                    Dark
+                                    <svg class="bi ms-auto d-none">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="auto" aria-pressed="false">
+                                    <svg class="bi me-2 opacity-50">
+                                        <use href="#circle-half"></use>
+                                    </svg>
+                                    Auto
+                                    <svg class="bi ms-auto d-none">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </nav>
 
     <div class="container pt-3">
         <div class="row">
-            <div class="col-md-2">
-                <h3>How Do I...</h3>
+            <div class="col-md-3 col-lg-2 pb-4">
+                <h4 class="pt-2" id="how-do-i-subtitle">How Do I?</h4>
                 <hr />
-                <div class="d-flex align-items-start">
-                    <div class="nav flex nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        
-                        <button class="nav-link active" id="wireless-tab" data-bs-toggle="pill"
+                <div class="d-flex flex-column">
+                    <div class="nav flex-column gap-2 nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <button class="nav-link active bg-success" id="wireless-tab" data-bs-toggle="pill"
                             data-bs-target="#wireless-content" type="button" role="tab" aria-controls="wireless-content"
                             aria-selected="true">Wireless</button>
 
+                        <button class="nav-link bg-success" id="other-tab" data-bs-toggle="pill"
+                            data-bs-target="#other-content" type="button" role="tab" aria-controls="other-content"
+                            aria-selected="true">Other</button>
+
+                        <!-- Other tabs to be added -->
+                        <!--
                         <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
                             aria-selected="false">How to 2</button>
@@ -90,128 +233,481 @@
                             <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
                             aria-selected="false">How to 3</button>
+                            -->
                     </div>
+
 
                 </div>
             </div>
-            <div class="col-md-9">
-                <h2>Wireless</h2>
-                <h3>AMDSB-Secure</h3>
-                <p>
-                    Wireless networks consist of the following:
-                </p>
-                <p>
-                    <b>AMDSB-SECURE</b> = this network is for both AMDSB owned and personal devices. Our systems
-                    will
-                    automatically determine if this device is board owned and apply necessary security.
-                </p>
-                <p>
-                    <b>AMDSB-GUEST</b> = this network is for external guest users who are Not AMDSB Staff or
-                    Students.
-                </p>
+            <div class="col-md-8 col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="wireless-content" role="tabpanel"
+                        aria-labelledby="wireless-tab" tabindex="0">
+                        <h2 class="text-primary"><strong>Wireless</strong></h2>
+                        <p>
+                            Our wireless networks consist of the following:
+                        </p>
+                        <ul>
+                            <li>
+                                <b class="text-primary">AMDSB-SECURE</b> - this network is for both AMDSB owned and
+                                personal
+                                devices. Our systems
+                                will
+                                automatically determine if this device is board owned and apply necessary security.
+                            </li>
+                            <li>
+                                <b class="text-primary">AMDSB-GUEST</b> - this network is for external guest users who
+                                are Not
+                                AMDSB Staff or
+                                Students.
+                            </li>
+                        </ul>
 
-                <p>
-                    <b>The new AMDSB-SECURE network may have compatibility issues with some older personal
-                        devices.
-                        <br>
-                        In this case you will need to join the AMDSB-GUEST.
-                    </b>
-                </p>
-                <p>
-                    <b>NOTE: AMDSB-IOS and AMDSB-CHROME are for AMDSB owned devices only!</b>
-                </p>
-                <p>
-                    As a result of privacy features present in all contemporary Wi-Fi devices, it's not feasible
-                    for
-                    us to retain
-                    your login credentials.
-                    Consequently, you might encounter repeated prompts to log in to the Wi-Fi
-                    system.
-                    </p>
-                    <p>
-                    One <b>solution</b> is to disable your private Wi-Fi settings.
+                        <p>
+                            <b>The new AMDSB-SECURE network may have compatibility issues with some older personal
+                                devices.
+                                <br>
+                                In this case you will need to join the AMDSB-GUEST.
+                            </b>
+                        </p>
+                        <p>
+                        <h4 id="AMDSB-devices-only-badge"><span class="badge bg-danger">AMDSB-IOS and AMDSB-CHROME are
+                                for AMDSB
+                                owned devices only!</span>
+                        </h4>
+                        </p>
+                        <p>
+                            As a result of privacy features present in all contemporary Wi-Fi devices, it's not feasible
+                            for
+                            us to retain
+                            your login credentials.
+                            Consequently, you might encounter repeated prompts to log in to the Wi-Fi
+                            system.
+                        </p>
+                        <p>
+                            One <b>solution</b> is to disable your private Wi-Fi settings:
 
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button bg-success-subtle border border-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <h5 class="p-0 m-0">Turn Off InPrivate Wi-Fi</h5>
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse hide" data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 p-2">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active"
-                                    id="wireless-content" role="tabpanel" aria-labelledby="wireless-tab" tabindex="0">            
-                                    <div id="IOS_InPrivate_Section"
-                                        class="text-info-emphasis bg-info-subtle border border-info-subtle rounded-3 p-2">
-                                        <h4><span class="badge rounded-pill bg-secondary">IOS</span></h4>
-                                        <ol class="list-group-numbered">
-                                            <li class="list-group-item">Go to Settings <img src="/ithelp/hdi/images/ios_settings.png"
-                                                    alt="ios-settings"> > Wi-Fi, then tap <img src="/ithelp/hdi/images/information_ios.png"
-                                                    alt="ios information button"> on a network.</li>
-                                            <li class="list-group-item">Turn Private Address off.</li>
-                                        </ol>
-                                        <hr>
-                                        <h4>
-                                            <span class="badge rounded-pill bg-success">Android</span>
-                                        </h4>
-                                        <ol class="list-group-numbered">
-                                            <li class="list-group-item">Open Settings app on Android device.</li>
-                                            <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings.png"
-                                                alt="android wifi settings 1">
-                                            <li class="list-group-item pt-5">Tap Connections</li>
-                                            <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings2.png"
-                                                alt="contuation of android wifi settings 2">
-                                            <li class="list-group-item pt-5">Tap Wi-Fi</li>
-                                            <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings3.png"
-                                                alt="contuation of android wifi settings 3">
-                                            <li class="list-group-item pt-5">Tap the settings gear icon</li>
-                                            <img class="w-50 pt-3" src="/ithelp/hdi/images/android_wifi_settings4.png"
-                                                alt="contuation of android wifi settings 4">
-                                            <li class="list-group-item pt-5">Tap "Phone MAC"</li>
-                                            <img class="w-50 pt-3" src="/ithelp/hdi/images/android_wifi_settings5.png"
-                                                alt="contuation of android wifi settings 5">
-                                        </ol>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        <h5 class="p-0 m-0">Turn Off InPrivate Wi-Fi</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+
+                                        <div id="IOS_InPrivate_Section" class="text-info-emphasis  rounded-3 p-2">
+                                            <h4><span class="badge rounded-pill bg-secondary">IOS</span></h4>
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">Go to Settings <img
+                                                        src="/ithelp/hdi/images/ios_settings.png" alt="ios-settings"> >
+                                                    Wi-Fi, then tap <img src="/ithelp/hdi/images/information_ios.png"
+                                                        alt="ios information button"> on a network.</li>
+                                                <li class="list-group-item">Turn Private Address off.</li>
+                                            </ol>
+                                            <hr>
+                                            <h4>
+                                                <span class="badge rounded-pill bg-success">Android</span>
+                                            </h4>
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">Open Settings app on Android device.</li>
+                                                <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings.png"
+                                                    alt="android wifi settings 1">
+                                                <li class="list-group-item pt-5">Tap Connections</li>
+                                                <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings2.png"
+                                                    alt="contuation of android wifi settings 2">
+                                                <li class="list-group-item pt-5">Tap Wi-Fi</li>
+                                                <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings3.png"
+                                                    alt="contuation of android wifi settings 3">
+                                                <li class="list-group-item pt-5">Tap the settings gear icon</li>
+                                                <img class="w-50 pt-3"
+                                                    src="/ithelp/hdi/images/android_wifi_settings4.png"
+                                                    alt="contuation of android wifi settings 4">
+                                                <li class="list-group-item pt-5">Tap "Phone MAC"</li>
+                                                <img class="w-50 pt-3"
+                                                    src="/ithelp/hdi/images/android_wifi_settings5.png"
+                                                    alt="contuation of android wifi settings 5">
+                                            </ol>
+                                        </div>
+
                                     </div>
-            
-                                </div>
-                        </div>
-                      </div>
-                    </div>
-               
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab" tabindex="0"></div>
 
-                    
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <h3 class="pt-5">AMDSB-SECURE</h3>
+                        <div class="accordion" id="accordionExample2">
+
+                            <!--AMDSB-SECURE ON AN ANDROID BASED OS-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        <h5 class="p-0 m-0">
+                                            On an <span class="badge rounded-pill bg-success">Android</span>
+                                            Based Operating System
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+
+                                        <div id="IOS_InPrivate_Section" class="rounded-3 p-2">
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">Connect to the <span
+                                                        class="text-primary">AMDSB-Secure</span> Wi-fi on your
+                                                    Android device.
+                                                    <img class="d-block" src="/ithelp/hdi/images/android_based_os/1.png"
+                                                        alt="image of wi-fi screen to connect to amdsb-secure">
+                                                </li>
+                                                <li class="list-group-item pt-3">Enter your Avon Maitland
+                                                    Username
+                                                    (firstname.lastname) <b>or</b> full email address ending in
+                                                    @ed.amdsb.ca & your password. Ensure <span
+                                                        class="text-danger">Auto-reconnect</span> is turned on.
+                                                    <img class="d-block" src="/ithelp/hdi/images/android_based_os/2.png"
+                                                        alt="image of entering credentials into AMDSB-SECURE wi-fi network">
+                                                </li>
+                                                <li class="list-group-item pt-3">Tap on <span class="text-primary">CA
+                                                        cetificate</span> and choose the
+                                                    <span class="text-primary">Don't Validate</span> option.
+                                                    <img class="d-block" src="/ithelp/hdi/images/android_based_os/3.png"
+                                                        alt="image of tapping CA cetificate and the Don't validate option">
+                                                </li>
+                                            </ol>
+                                            <hr>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF AMDSB-SECURE ON AN ANDROID BASED OS-->
+
+                            <!--APPLE IOS AMDSB-SECURE-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <h5 class="p-0 m-0">
+                                            On an <span class="badge rounded-pill bg-secondary">IOS</span>
+                                            Based Operating System
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+
+                                        <div id="apple_amdsb_secure" class="rounded-3 p-2">
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">
+                                                    Connect to <span class="text-primary">AMDSB-Secure</span>
+                                                    and
+                                                    enter Username and password<br>firstname.lastname <b>or</b>
+                                                    full
+                                                    email address ending in @ed.amdsb.ca accepted.
+                                                    <br>
+
+                                                    <img class="d-block" src="/ithelp/hdi/images/apple_based_os/1.png"
+                                                        alt="iamge of wi-fi screen to connect to amdsb-secure">
+
+
+                                                </li>
+                                                <li class="list-group-item pt-3">
+                                                    If prompted to trust a certificate, please click
+                                                    <b>Trust</b>
+                                                    <img class="d-block" src="/ithelp/hdi/images/apple_based_os/2.png"
+                                                        alt="image of trusting certificate">
+                                                </li>
+                                            </ol>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF APPLE IOS AMDSB-SECURE-->
+
+                            <!--WINDOWS OS AMDSB-SECURE-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        <h5 class="p-0 m-0">
+                                            On a <span class="badge rounded-pill bg-info">Windows</span>
+                                            Operating System
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                        <div id="apple_amdsb_secure" class="rounded-3 p-2">
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">
+                                                    Connect to <span class="text-primary">AMDSB-Secure</span>
+                                                    and
+                                                    enter Username and password<br>firstname.lastname <b>or</b>
+                                                    full
+                                                    email address ending in @ed.amdsb.ca accepted.
+                                                    <br>
+                                                    <br>
+                                                    <p>
+                                                        Make sure <span class="text-primary">Use my windows user
+                                                            account</span> is unchecked if using a PERSONAL
+                                                        windows
+                                                        device.
+                                                    </p>
+                                                    <img class="d-block" src="/ithelp/hdi/images/windows_os/1.png"
+                                                        alt="iamge of wi-fi screen to connect to amdsb-secure">
+
+
+                                                </li>
+                                                <li class="list-group-item pt-3">
+                                                    Click <span class="text-primary">Connect</span> when
+                                                    prompted a
+                                                    second time!
+                                                    <img class="d-block" src="/ithelp/hdi/images/windows_os/2.png"
+                                                        alt="image of trusting certificate">
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF WINDOWS OS AMDSB-SECURE-->
+
+                            <!--macOS AMDSB-SECURE-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        <h5 class="p-0 m-0">
+                                            On a <span class="badge rounded-pill bg-secondary">macOS</span>
+                                            Operating System
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                        <div id="apple_amdsb_secure" class="rounded-3 p-2">
+                                            <ol class="list-group-numbered">
+                                                <li class="list-group-item">
+                                                    Connect to <span class="text-primary">AMDSB-Secure</span>
+                                                    which
+                                                    you will be promoted for your Active Directory login
+                                                    (firstname.lastname & password).
+
+                                                </li>
+                                                <li class="list-group-item pt-3">
+                                                    When a prompt is presented, accept our Certificate.
+                                                    <br>
+                                                    You must always choose <span class="text-primary">Always
+                                                        Trust</span> and click <span
+                                                        class="text-primary">Continue</span>
+                                                    <img class="d-block" src="/ithelp/hdi/images/macos/1.png"
+                                                        alt="image of trusting certificate">
+                                                    <b>Mac based devices will then prompt you for a <span
+                                                            class="text-primary">second</span> username and
+                                                        password
+                                                        after clicking <span class="text-primary">Continue</span>.
+                                                        <br>
+                                                        You will then need to enter your Local Mac Administrator
+                                                        Username & Password.</b>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF macOS AMDSB-SECURE-->
+
+
+                            <!--ChromeBook Personal AMDSB-SECURE-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        <h5 class="p-0 m-0">
+                                            On a <span class="badge rounded-pill bg-success">Chromebook</span>
+                                            (personal)
+                                            Operating System
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="wireless-content" role="tabpanel"
+                                                aria-labelledby="wireless-tab" tabindex="0">
+                                                <div id="apple_amdsb_secure" class="rounded-3 p-2">
+                                                    <ol class="list-group-numbered">
+                                                        <li class="list-group-item">
+                                                            Click on the wireless Logo located on the Bottom right
+                                                            corner.
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/chromebook/1.png"
+                                                                alt="image wireless logo">
+                                                        </li>
+                                                        <li class="list-group-item pt-3">
+                                                            Click on the wireless logo (located above the <span
+                                                                class="text-danger">Not connected</span>)
+                                                            <br>
+                                                            You must always choose <span class="text-primary">Always
+                                                                Trust</span> and click <span
+                                                                class="text-primary">Continue</span>
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/chromebook/2.png"
+                                                                alt="image of wireless modal on chromebook">
+                                                        </li>
+                                                        <li class="list-group-item pt-3">
+                                                            Next Select your preferred network (<span
+                                                                class="text-primary">AMDSB-Secure</span>)
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/chromebook/3.png"
+                                                                alt="image of network's available">
+                                                        </li>
+                                                        <li class="list-group-item pt-3">
+                                                            Configure as follows:
+                                                            <ul>
+                                                                <li>EAP Method - PEAP</li>
+                                                                <li>EAP Phase 2 Authentication - MSCHAPv2</li>
+                                                                <li>Server CA Certificate - Do not check.</li>
+                                                                <li>Identity – Your AMDSB Active Directory Username
+                                                                    (firstname.lastname)</li>
+                                                                <li>Password – Your AMDSB Active Directory Password</li>
+                                                                <li>Anonymous Identity - not required - leave blank.
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF personal chromebook AMDSB-SECURE-->
+                        </div>
+
+                        <h3 class="pt-5">AMDSB-GUEST</h3>
+                        <div class="accordion" id="accordionExample3">
+                            <!--AMDSB-GUEST-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
+                                        <h5 class="p-0 m-0">
+                                            AMDSB-GUEST Wi-Fi
+                                        </h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse hide"
+                                    data-bs-parent="#accordionExample3">
+                                    <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="wireless-content" role="tabpanel"
+                                                aria-labelledby="wireless-tab" tabindex="0">
+                                                <div id="apple_amdsb_secure" class="rounded-3 p-2">
+                                                    <ol class="list-group-numbered">
+                                                        <li class="list-group-item">
+                                                            After connecting to <span
+                                                                class="text-primary">AMDSB-GUEST</span>
+                                                            Wi-Fi you will be prompted to enter a sponsor email. <br>
+                                                            Any sponsor email ending in @ed.amdsb.ca and your email
+                                                            address
+                                                            (AMDSB or Personal email accepted)
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/AMDSB_GUEST/1.png"
+                                                                alt="image wireless logo">
+                                                        </li>
+                                                        <li class="list-group-item pt-3">
+                                                            Next the Sponsor will receive an email and be asked to
+                                                            accept your
+                                                            wi-fi access request (below screenshot).
+                                                            <br>
+                                                            The Sponsor will need to <span class="text-primary">click
+                                                                here</span> to allow access.
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/AMDSB_GUEST/2.png"
+                                                                alt="image of wireless modal on chromebook">
+                                                        </li>
+                                                        <li class="list-group-item pt-3">
+                                                            As soon as the Sponsor allows access the <span
+                                                                style="color:orange;">Orange Login button</span> at the
+                                                            bottom
+                                                            will become enabled so you can click on this button.
+                                                            <img class="d-block"
+                                                                src="/ithelp/hdi/images/AMDSB_GUEST/3.png"
+                                                                alt="image of network's available">
+                                                        </li>
+
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF AMDSB-GUEST-->
+                        </div>
+                    </div>
+                    <!-- end of wireless content pane-->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade" id="other-content" role="tabpanel" aria-labelledby="other-tab"
+                            tabindex="0">
+                            <div class="container">
+                            <h2 class="text-warning">To be continued with additional content</h2>
+                            <h4>For now, please refer to the 
+                                <a target="_blank" href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Training?csf=1&web=1&e=aRgmFN">
+                                IT Training Sharepoint directory</a> for our training documents.</h4>
+                            
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-            pariatur
-            mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-            Lorem
-            est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia.
-            Sit
-            irure
-            elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-            voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-            reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-            consectetur et est culpa et culpa duis.
-        </footer>
-    </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="../js/index-functions.js"></script>
 </body>
 
 </html>

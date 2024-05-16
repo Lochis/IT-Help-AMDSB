@@ -11,22 +11,59 @@ html, body, html * {
   line-height: 1.7;
 }
 
-.navbar {
-  /*background-color: rgb(25,74,111);*/
+svg {
+  max-width: 40px;
+  max-height: 50px;
 }
 
 .nav-link:hover{
-  color: #EC2C38;
+  color: #e9ecef;
 }
 
-#header-title {
-  color: rgb(25,74,111);
+.nav-link {
+  color: black;
+}
+
+header h1 {
+  font-size:32px;
 }
 
 /* sm */
 @media screen and (max-width: 767px) {
- h1 {
-   font-size: 24px;
+ #header-title {
+   font-size: 18px;
  } 
+
+ #AMDSB-devices-only-badge {
+  font-size: 16px;
+ }
 }
+
+@media screen and (max-width: 1000px) and (min-width: 767px) {
+  #header-title {
+    font-size: 24px;
+  } 
+ 
+  #AMDSB-devices-only-badge {
+   font-size: 16px;
+  }
+ }
+
+@media screen and (min-width: 767px) {
+  .navbar-brand {
+    display: none;
+    -webkit-display:none;
+    -ms-display: none;
+  }
+
+  #theme-toggle-mobile {
+    display: none;
+    -webkit-display:none;
+    -ms-display: none;
+   }
+}
+
+
+
+
 

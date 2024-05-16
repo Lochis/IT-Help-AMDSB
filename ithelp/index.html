@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="./css/styles.css" rel="stylesheet">
-  <script src="js/index-functions.js"></script>
+  <link rel="icon" href="./images/icon.png">
 </head>
 
 <body>
@@ -37,35 +37,147 @@
     </symbol>
   </svg>
 
-  <header class="container pt-3">
-    <a href="#" class="text-decoration-none">
-      <h1>Avon Maitland Information Technology</h1>
-    </a>
-  </header>
-
-  <nav class="navbar navbar-expand-md mx-0 mt-3 shadow">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto gap-lg-5">
-          <li class="nav-item">
-            <a class="nav-link" href="/ithelp/hdi">How Do I?</a>
-          </li>
-          <li class=" nav-item">
-            <a class="nav-link" aria-current="page" href="/ithelp/hdi/getHelp.html">Get Help</a>
-          </li>
-          <li class=" nav-item">
-            <a class="nav-link" aria-current="page" href="#">Place Holder</a>
-          </li>
-          <li class=" nav-item">
-            <a class="nav-link " aria-current="page" href="#">Place Holder</a>
-          </li>
-      </div>
+  <header class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none">
+    <div class="container d-flex">
+    <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none text-success">
+        <div class="d-flex align-items-center">
+            <img class="align-self-start" width="60rem" src="../../img/home_button.png" />
+        <h1 id="header-title" class="px-3"><strong>Avon Maitland Information Technology</strong></h1>
     </div>
-  </nav>
+    </a>
+    <div id="theme-toggle" class="nav-item dropdown me-2 flex-shrink-1">
+        <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle Theme (dark)">
+        <svg class="bi my-1 theme-icon-active">
+            <use href="#moon-stars-fill"></use>
+            </svg>
+            <span class=""d-lg-none ms-2" id="bd-theme-text"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-100"><use href="#sun-fill"></use></svg>
+                    Light
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                    <svg class="bi me-2 opacity-100"><use href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                    <svg class="bi me-2 opacity-100"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+            </li>
+        </ul>
+    </div>
+  </div>
+  
+  </div>
+
+</header>
+
+<nav class="navbar navbar-expand-md mx-0 bg-body-tertiary shadow">
+    <div class="container-fluid d-flex">
+        <a href="/ithelp/" class="text-decoration-none text-decoration-none text-success navbar-brand">
+            <div class="d-flex align-items-center">
+                <img class="align-self-start" width="40rem" src="../../img/home_button.png" />
+            <h1 id="header-title" class="px-3">Avon Maitland Information Technology</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto gap-lg-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="/ithelp/hdi/">
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/training.png"/>
+                        <!--<h5>How Do I?</h5>-->
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/guidelines.png"/>
+                        <!--<h5>TopDesk</h5>-->
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://amdsb.topdesk.net/tas/public/login/saml">
+                        <!--<h5>IT Guidelines</h5>-->
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/topdesk_staff.png"/>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="/applist/">
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/board_approved_apps.png"/>
+                        <!--<h5>Approved Tools</h5>-->
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://amdsb.sharepoint.com/:b:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines/IT%20Price%20List.pdf?csf=1&web=1&e=r2LA21">
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/pricelist.png"/>
+                        <!--<h5>it price list</h5>-->
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://amdsb.sharepoint.com/:b:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines/IT%20Price%20List.pdf?csf=1&web=1&e=r2LA21">
+                        <img class="img-fluid rounded-4" width="75rem" src="./images/nav/purchasing.png"/>
+                        <!--<h5>it price list</h5>-->
+                    </a>
+                </li>
+                <div id="theme-toggle-mobile" class="nav-item dropdown">
+                    <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-label="Toggle Theme (dark)">
+                    <svg class="bi my-1 theme-icon-active">
+                        <use href="#moon-stars-fill"></use>
+                        </svg>
+                        <span class=""d-lg-none ms-2" id="bd-theme-text"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+                                Light
+                                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                              </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                                <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+                                Dark
+                                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                              </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+                                Auto
+                                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                              </button>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</nav>
 
   <div id="main" class="container">
 
@@ -95,18 +207,20 @@
           <li>OnSIS reporting</li>
           <li>Admissions and Enrolment of Pupils</li>
         </ul>
+        <a target="_blank" href="https://amdsb.sharepoint.com/sites/Info/cs/Documents/IT%20Information%20%26%20Resources/ITS%20Contact%20List.pdf">For a contact directory of the Information Technology Services Team, click here.</a>
       </div>
 
-      <div class="col-lg-3 col-md-12 col-sm-12 mx-auto rounded shadow">
+      <div class="col-lg-3 col-md-12 col-sm-12 mx-auto rounded shadow h-100 pb-4">
         <h5 class="text-primary-emphasis pt-2 border-bottom border-2 border-info">Need Help?</h5>
+        <div class="pt-3">
         <h6 class="text-center">Submit a TOPdesk Ticket</h6>
         <div class="w-50 mx-auto">
           <a href="https://amdsb.topdesk.net/tas/public/login/saml" target="_blank">
-            <img class="img-fluid mx-auto d-block d-md-block w-75 pb-3" src="images/TOPdesk_button.png"
+            <img class="img-fluid mx-auto d-block d-md-block w-75 pb-3" src="./images/TOPdesk_button.png"
               alt="TOPdesk login" />
           </a>
         </div>
-        <h6></h6>
+      </div>
       </div>
     </div>
   </div>
@@ -117,13 +231,13 @@
     </footer>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+  crossorigin="anonymous"></script>
+  <script src="./js/index-functions.js"></script>
 </body>
 
 </html>
