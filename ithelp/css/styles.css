@@ -63,6 +63,10 @@ header h1 {
    }
 }
 
+.list-group-item > img {
+  max-width: 90%;
+}
+
 
 
 
