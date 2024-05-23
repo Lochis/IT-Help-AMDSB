@@ -39,12 +39,12 @@
 
   <header class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none border border-success border-top-0 border-end-0 border-start-0">
     <div class="container d-flex">
-    <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none text-success">
-        <div class="d-flex align-items-center">
-            <img class="align-self-start" width="60rem" src="../../img/home_button.png" />
-        <h1 id="header-title" class="px-3"><strong>Avon Maitland Information Technology</strong></h1>
-    </div>
-    </a>
+      <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none">
+          <div class="d-flex align-items-center">
+              <img class="align-self-start" width="60rem" src="../../img/home_button.png" />
+              <h1 id="header-title" class="px-3"><strong>Information Technology Services</strong></h1>
+          </div>
+      </a>
     <div id="theme-toggle" class="nav-item dropdown me-2 flex-shrink-1">
         <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
         id="bd-theme"
@@ -89,12 +89,13 @@
 </header>
 
 <nav class="navbar navbar-expand-md mx-0 bg-body-tertiary shadow">
-    <div class="container-fluid d-flex">
-        <a href="/ithelp/" class="text-decoration-none text-decoration-none text-success navbar-brand">
-            <div class="d-flex align-items-center">
-                <img class="align-self-start" width="40rem" src="../../img/home_button.png" />
-            <h1 id="header-title" class="px-3">Avon Maitland Information Technology</h1>
-            </div>
+    <div class="container-fluid d-inline">
+        <a href="/ithelp/" class="text-decoration-none text-decoration-none theme-toggle-mobile">
+            <div class="d-inline align-items-center">
+                <img width="40rem" src="../../img/home_button.png" />
+                  <h1 id="header-title" class="px-1 d-inline">Information Technology Services</h1>
+                </div>
+                
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,7 +139,7 @@
                         <!--<h5>it price list</h5>-->
                     </a>
                 </li>
-                <div id="theme-toggle-mobile" class="nav-item dropdown">
+                <div class="nav-item dropdown theme-toggle-mobile">
                     <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
                     id="bd-theme"
                     type="button"
@@ -180,11 +181,12 @@
 </nav>
 
   <div id="main" class="container">
+    <div class="row pt-5">
 
-    <div class="row mt-5">
+      <div class="col-md-1"> 
+        </div> 
 
-      <div class="col-lg-8 col-md-12 col-sm-12">
-
+      <div class="col-md-10 col-sm-12">       
         <p>The <b>Information Technology Services department</b> is responsible for all technical support, training,
           security of networks, devices, core business systems, and student information systems of the Avon Maitland
           District School
@@ -194,7 +196,7 @@
           progressive technologies in our classrooms of today and tomorrow.
         </p>
 
-        <h3>The Information Technology Services Team is responsible for:</h3>
+        <h3 id="mainpage-subtitle">The Information Technology Services Team is responsible for:</h3>
         <ul>
           <li>Technology planning and management</li>
           <li>Technology support and repairs</li>
@@ -210,6 +212,10 @@
         <a target="_blank" href="https://amdsb.sharepoint.com/sites/Info/cs/Documents/IT%20Information%20%26%20Resources/ITS%20Contact%20List.pdf">For a contact directory of the Information Technology Services Team, click here.</a>
       </div>
 
+      <div class="col-md-1"> 
+      </div> 
+    </div> 
+      <!--
       <div class="col-lg-3 col-md-12 col-sm-12 mx-auto rounded shadow h-100 pb-4">
         <h5 class="text-primary-emphasis pt-2 border-bottom border-2 border-info">Need Help?</h5>
         <div class="pt-3">
@@ -222,6 +228,7 @@
         </div>
       </div>
       </div>
+    -->
     </div>
   </div>
 

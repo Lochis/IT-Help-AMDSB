@@ -56,15 +56,19 @@ header h1 {
     -ms-display: none;
   }
 
-  #theme-toggle-mobile {
+  .theme-toggle-mobile {
     display: none;
     -webkit-display:none;
     -ms-display: none;
-   }
+  }
 }
 
 .list-group-item > img {
   max-width: 90%;
+}
+
+#mainpage-subtitle {
+  font-size: 1.5em;
 }
 
 

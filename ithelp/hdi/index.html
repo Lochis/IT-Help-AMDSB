@@ -34,12 +34,13 @@
         </symbol>
     </svg>
 
-    <header class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none border border-success border-top-0 border-end-0 border-start-0">
+    <header
+        class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none border border-success border-top-0 border-end-0 border-start-0">
         <div class="container d-flex">
-            <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none text-success">
+            <a href="/ithelp/" class="d-flex w-100 text-decoration-none text-decoration-none">
                 <div class="d-flex align-items-center">
                     <img class="align-self-start" width="60rem" src="../../img/home_button.png" />
-                    <h1 id="header-title" class="px-3"><strong>Avon Maitland Information Technology</strong></h1>
+                    <h1 id="header-title" class="px-3"><strong>Information Technology Services</strong></h1>
                 </div>
             </a>
             <div id="theme-toggle" class="nav-item dropdown me-2 flex-shrink-1">
@@ -55,7 +56,7 @@
                     <li>
                         <button type="button" class="dropdown-item d-flex align-items-center"
                             data-bs-theme-value="light" aria-pressed="false">
-                            <svg class="bi me-2 opacity-50">
+                            <svg class="bi me-2 opacity-100">
                                 <use href="#sun-fill"></use>
                             </svg>
                             Light
@@ -65,9 +66,9 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center active"
-                            data-bs-theme-value="dark" aria-pressed="true">
-                            <svg class="bi me-2 opacity-50">
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                            aria-pressed="true">
+                            <svg class="bi me-2 opacity-100">
                                 <use href="#moon-stars-fill"></use>
                             </svg>
                             Dark
@@ -79,7 +80,7 @@
                     <li>
                         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
                             aria-pressed="false">
-                            <svg class="bi me-2 opacity-50">
+                            <svg class="bi me-2 opacity-100">
                                 <use href="#circle-half"></use>
                             </svg>
                             Auto
@@ -91,17 +92,19 @@
                 </ul>
             </div>
         </div>
+
         </div>
 
     </header>
 
     <nav class="navbar navbar-expand-md mx-0 bg-body-tertiary shadow">
-        <div class="container-fluid d-flex">
-            <a href="/ithelp/" class="text-decoration-none text-decoration-none text-success navbar-brand">
-                <div class="d-flex align-items-center">
-                    <img class="align-self-start" width="40rem" src="../../img/home_button.png" />
-                    <h1 id="header-title" class="px-3">Avon Maitland Information Technology</h1>
+        <div class="container-fluid d-inline">
+            <a href="/ithelp/" class="text-decoration-none text-decoration-none theme-toggle-mobile">
+                <div class="d-inline align-items-center">
+                    <img width="40rem" src="../../img/home_button.png" />
+                    <h1 id="header-title" class="px-1 d-inline">Information Technology Services</h1>
                 </div>
+
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,8 +114,7 @@
                 <ul class="navbar-nav mx-auto gap-lg-5">
                     <li class="nav-item">
                         <a class="nav-link" href="/ithelp/hdi/">
-                            <img id="training-btn" class="img-fluid rounded-4" width="75rem"
-                                src="../images/nav/training.png" />
+                            <img class="img-fluid rounded-4" width="75rem" src="../images/nav/training.png" />
                             <!--<h5>How Do I?</h5>-->
                         </a>
                     </li>
@@ -151,7 +153,7 @@
                             <!--<h5>it price list</h5>-->
                         </a>
                     </li>
-                    <div id="theme-toggle-mobile" class="nav-item dropdown">
+                    <div class="nav-item dropdown theme-toggle-mobile">
                         <button class="btn btn-link nav-link py-2 px-0 dropdown-toggle d-flex align-items-center"
                             id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
                             data-bs-display="static" aria-label="Toggle Theme (dark)">
@@ -212,11 +214,15 @@
                     <div class="nav flex-column gap-2 nav-pills me-3" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
 
-                        <button class="nav-link active bg-success" id="wireless-tab" data-bs-toggle="pill"
+                        <button class="nav-link active bg-primary" id="wireless-tab" data-bs-toggle="pill"
                             data-bs-target="#wireless-content" type="button" role="tab" aria-controls="wireless-content"
                             aria-selected="true">Wireless</button>
 
-                        <button class="nav-link bg-success" id="other-tab" data-bs-toggle="pill"
+                        <button class="nav-link bg-primary" id="duo-tab" data-bs-toggle="pill"
+                            data-bs-target="#duo-content" type="button" role="tab" aria-controls="duo-content"
+                            aria-selected="true">Duo - MFA</button>
+
+                        <button class="nav-link bg-primary" id="other-tab" data-bs-toggle="pill"
                             data-bs-target="#other-content" type="button" role="tab" aria-controls="other-content"
                             aria-selected="true">Other</button>
 
@@ -678,36 +684,115 @@
                         </div>
                     </div>
                     <!-- end of wireless content pane-->
+
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade" id="other-content" role="tabpanel" aria-labelledby="other-tab"
+                        <div class="tab-pane fade" id="duo-content" role="tabpanel" aria-labelledby="duo-tab"
                             tabindex="0">
                             <div class="container">
-                            <h2 class="text-warning">To be continued with additional content</h2>
-                            <h4>For now, please refer to the 
-                                <a target="_blank" href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Training?csf=1&web=1&e=aRgmFN">
-                                IT Training Sharepoint directory</a> for our training documents.</h4>
-                            
-                            </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-auto me-auto">
+                                        <h2 class="text-primary"><strong>Duo - MFA</strong></h2>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img class="flex-end" src="../hdi/images/duo/duo_icon.png">
+                                    </div>
+                                </div>
 
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <h5 class="p-0 m-0">First Time Set Up</h5>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse hide"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                                <p>The Duo Mobile app is only supported on devices that are running
+                                                    Android 10+ and iOS 14+.
+                                                </p>
+                                                <p>
+                                                    To check if your phone supports Duo Mobile, search for the app in
+                                                    the Apple App Store or Google Play Store and try to install it.
+                                                </p>
+                                                <p>
+                                                    If you do not see, or cannot install the app, your phone is not
+                                                    compatible. Some iPhones may be prompted to install an older version
+                                                    of the app and should do that if asked.
+                                                </p>
+
+                                                <h6>NOTE: If you have requested a hardware token, please ignore these steps.</h6>
+
+                                                <p>If your cell phone does not support Duo Mobile, please submit a TOPDesk ticket under “Submit a Ticket > MFA > Cannot Use Duo Mobile App” and ignore the enrollment email.</p>
+
+                                                <ol class="list-group-numbered">
+                                                    <li class="list-group-item">Open Settings app on Android device.
+                                                    </li>
+                                                    <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings.png"
+                                                        alt="android wifi settings 1">
+                                                    <li class="list-group-item pt-5">Tap Connections</li>
+                                                    <img class="w-50"
+                                                        src="/ithelp/hdi/images/android_wifi_settings2.png"
+                                                        alt="contuation of android wifi settings 2">
+                                                    <li class="list-group-item pt-5">Tap Wi-Fi</li>
+                                                    <img class="w-50"
+                                                        src="/ithelp/hdi/images/android_wifi_settings3.png"
+                                                        alt="contuation of android wifi settings 3">
+                                                    <li class="list-group-item pt-5">Tap the settings gear icon</li>
+                                                    <img class="w-50 pt-3"
+                                                        src="/ithelp/hdi/images/android_wifi_settings4.png"
+                                                        alt="contuation of android wifi settings 4">
+                                                    <li class="list-group-item pt-5">Tap "Phone MAC"</li>
+                                                    <img class="w-50 pt-3"
+                                                        src="/ithelp/hdi/images/android_wifi_settings5.png"
+                                                        alt="contuation of android wifi settings 5">
+                                                </ol>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade" id="other-content" role="tabpanel" aria-labelledby="other-tab"
+                                tabindex="0">
+                                <div class="container">
+                                    <h2 class="text-warning">To be continued with additional content</h2>
+                                    <h4>For now, please refer to the
+                                        <a target="_blank"
+                                            href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Training?csf=1&web=1&e=aRgmFN">
+                                            IT Training Sharepoint directory</a> for our training documents.
+                                    </h4>
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 
-            </footer>
-        </div>
+                </footer>
+            </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
-        <script src="../js/index-functions.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                crossorigin="anonymous"></script>
+            <script src="../js/index-functions.js"></script>
 </body>
 
 </html>
