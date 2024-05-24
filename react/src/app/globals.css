@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+/* set global css vars */
+:root {
+  --primary-item-bg: rgb(25,74,111); 
+}
+
+
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+}
+
+svg {
+  max-width: 40px;
+  max-height: 50px;
+}
+
+.nav-link:hover{
+  color: #e9ecef;
+}
+
+.nav-link {
+  color: black;
+}
+
+header h1 {
+  font-size:32px;
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+ #header-title {
+   font-size: 18px;
+ } 
+
+ #AMDSB-devices-only-badge {
+  font-size: 16px;
+ }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 767px) {
+  #header-title {
+    font-size: 24px;
+  } 
+ 
+  #AMDSB-devices-only-badge {
+   font-size: 16px;
+  }
+ }
+
+@media screen and (min-width: 767px) {
+  .navbar-title {
+    display: none;
+    -webkit-display:none;
+    -ms-display: none;
+  }
+
+  .theme-toggle-mobile {
+    display: none;
+    -webkit-display:none;
+    -ms-display: none;
+  }
+}
+
+.list-group-item > img {
+  max-width: 90%;
+}
+
+#mainpage-subtitle {
+  font-size: 1.5em;
+}
+
+
+
+
+
