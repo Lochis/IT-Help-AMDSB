@@ -34,6 +34,7 @@
         </symbol>
     </svg>
 
+    <!-- HEADER -->
     <header
         class="container-fluid pt-4 pb-3 bg-body-secondary d-md-block d-lg-block d-none border border-success border-top-0 border-end-0 border-start-0">
         <div class="container d-flex">
@@ -97,6 +98,7 @@
 
     </header>
 
+<!-- NavBar -->
     <nav class="navbar navbar-expand-md mx-0 bg-body-tertiary shadow">
         <div class="container-fluid d-inline">
             <a href="/ithelp/" class="text-decoration-none text-decoration-none theme-toggle-mobile">
@@ -205,6 +207,7 @@
         </div>
     </nav>
 
+    <!-- SIDE NAV, PILLS -->
     <div class="container pt-3">
         <div class="row">
             <div class="col-md-3 col-lg-2 pb-4">
@@ -221,6 +224,10 @@
                         <button class="nav-link bg-primary" id="duo-tab" data-bs-toggle="pill"
                             data-bs-target="#duo-content" type="button" role="tab" aria-controls="duo-content"
                             aria-selected="true">Duo - MFA</button>
+
+                            <button class="nav-link bg-primary" id="reset-tab" data-bs-toggle="pill"
+                            data-bs-target="#duo-content" type="button" role="tab" aria-controls="reset-content"
+                            aria-selected="true">Reset Password</button>
 
                         <button class="nav-link bg-primary" id="other-tab" data-bs-toggle="pill"
                             data-bs-target="#other-content" type="button" role="tab" aria-controls="other-content"
@@ -247,6 +254,8 @@
             </div>
             <div class="col-md-8 col-lg-9">
                 <div class="tab-content" id="v-pills-tabContent">
+
+                    <!-- WIRELESS TAB -->
                     <div class="tab-pane fade show active" id="wireless-content" role="tabpanel"
                         aria-labelledby="wireless-tab" tabindex="0">
                         <h2 class="text-primary"><strong>Wireless</strong></h2>
@@ -685,6 +694,7 @@
                     </div>
                     <!-- end of wireless content pane-->
 
+                    <!-- DUO TAB -->
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade" id="duo-content" role="tabpanel" aria-labelledby="duo-tab"
                             tabindex="0">
@@ -698,6 +708,23 @@
                                     </div>
                                 </div>
 
+                                <p>The Duo Mobile app is only supported on devices that are running
+                                    Android 10+ and iOS 14+.
+                                </p>
+                                <p>
+                                    To check if your phone supports Duo Mobile, search for the app in
+                                    the Apple App Store or Google Play Store and try to install it.
+                                </p>
+                                <p>
+                                    If you do not see, or cannot install the app, your phone is not
+                                    compatible. Some iPhones may be prompted to install an older version
+                                    of the app and should do that if asked.
+                                </p>
+
+                                <h6>NOTE: If you have requested a hardware token, please ignore these steps.</h6>
+
+                                <p>If your cell phone does not support Duo Mobile, please submit a TOPDesk ticket under “Submit a Ticket > MFA > Cannot Use Duo Mobile App” and ignore the enrollment email.</p>
+
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -709,6 +736,45 @@
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse hide"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body text-primary-emphasis rounded-3 p-2">
+                                                <ol class="list-group-numbered">
+                                                    <li class="list-group-item">Open Settings app on Android device.
+                                                    </li>
+                                                    <img class="w-50" src="/ithelp/hdi/images/android_wifi_settings.png"
+                                                        alt="android wifi settings 1">
+                                                    <li class="list-group-item pt-5">Tap Connections</li>
+                                                    <img class="w-50"
+                                                        src="/ithelp/hdi/images/android_wifi_settings2.png"
+                                                        alt="contuation of android wifi settings 2">
+                                                    <li class="list-group-item pt-5">Tap Wi-Fi</li>
+                                                    <img class="w-50"
+                                                        src="/ithelp/hdi/images/android_wifi_settings3.png"
+                                                        alt="contuation of android wifi settings 3">
+                                                    <li class="list-group-item pt-5">Tap the settings gear icon</li>
+                                                    <img class="w-50 pt-3"
+                                                        src="/ithelp/hdi/images/android_wifi_settings4.png"
+                                                        alt="contuation of android wifi settings 4">
+                                                    <li class="list-group-item pt-5">Tap "Phone MAC"</li>
+                                                    <img class="w-50 pt-3"
+                                                        src="/ithelp/hdi/images/android_wifi_settings5.png"
+                                                        alt="contuation of android wifi settings 5">
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button bg-info-subtle border border-info-subtle collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <h5 class="p-0 m-0">Change your Device</h5>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse hide"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body text-primary-emphasis rounded-3 p-2">
                                                 <p>The Duo Mobile app is only supported on devices that are running
@@ -751,10 +817,7 @@
                                                         alt="contuation of android wifi settings 5">
                                                 </ol>
                                             </div>
-
                                         </div>
-
-
                                     </div>
 
                                 </div>
