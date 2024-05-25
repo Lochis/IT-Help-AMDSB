@@ -1,52 +1,48 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button, Card, CardBody, CardText, Container, Row } from "react-bootstrap";
+import Link from "next/link";
+import { Button, Card, CardBody, CardText, Container, Row, Col, Carousel } from "react-bootstrap";
 
 export default function Home() {
   return (
     <>
-      <Container fluid="sm" className="text-center pt-3" style={{maxWidth:'550px'}}>
-        <Card>
-        <CardBody>
-          <CardText>
-          
-            Self Service Password Reset (SSPR)
-            <br></br>
-            and
-            <br></br>
-            Multi-Factor Authentication (MFA)
-          
+    <Container fluid='sm' className="pt-5">
+      <Container className="d-xs-none d-md-block">
+        <Row>
+          <Col md="1">
+          </Col>
+          <Col>
+        <p>The <b>Information Technology Services department</b> is responsible for all technical support, training,
+          security of networks, devices, core business systems, and student information systems of the Avon Maitland
+          District School
+          Board.
+          <br></br>
+          <br></br> The department is committed to ensure all students and staff have dependable and safe access to
+          progressive technologies in our classrooms of today and tomorrow.
+        </p>
 
-          <br></br><br></br>
-
-          
-            If you have trouble changing your password or with multi-factor authentication, please contact the Learning Resource Centre.
-         
-          </CardText>
-        </CardBody>
-        </Card>
-
-        <Row className="mx-auto gy-2 py-2 mx-auto">
-          <Button href="https://account.activedirectory.windowsazure.com/ChangePassword.aspx" className="btn btn-secondary text-white py-3" target="_blank">Click HERE to Change your current (known) Password.</Button>
-          <Button href="https://aka.ms/ssprsetup/?whr=ed.amdsb.ca" className="btn btn-success py-3" target="_blank">Click HERE to Register for Self Service Password Reset.</Button>
-          <Button href="https://passwordreset.microsoftonline.com/?whr=ed.amdsb.ca" className="btn btn-danger py-3" target="_blank">Click HERE to Reset your Password if you have forgotten it.</Button>
-          <Button href="https://mysignins.microsoft.com/security-info?tenant=7521a320-3ade-494f-b901-bbefc8e14285" className="btn btn-primary py-3" target="_blank">Click HERE to Change and Manage your O365 Security Info.</Button>
-        </Row>
-
-          <Row className="mx-auto gy-2 py-2 mx-auto">
-              <Card>
-                <CardBody>
-                  <h6>
-                    © 2023 Avon Maitland District School Board
-                    <br></br>
-                    62 Chalk Street, Seaforth Ontario, N0K1W0
-                    <br></br>
-                    519-527-0111 or 1-800-592-5437
-                  </h6>
-                </CardBody>
-              </Card>
+        <h3>The Information Technology Services Team is responsible for:</h3>
+        <ul>
+          <li>Technology planning and management</li>
+          <li>Technology support and repairs</li>
+          <li>Email and internet related services</li>
+          <li>Technology infrastructure development</li>
+          <li>Digital hardware, software and LAN/WAN design and implementation</li>
+          <li>Educational and assistive technology support</li>
+          <li>Information, Privacy and Security</li>
+          <li>Administration and technical support of Student Information System (Maplewood)</li>
+          <li>OnSIS reporting</li>
+          <li>Admissions and Enrolment of Pupils</li>
+        </ul>
+        <Link target="_blank" href="https://amdsb.sharepoint.com/sites/Info/cs/Documents/IT%20Information%20%26%20Resources/ITS%20Contact%20List.pdf">
+          For a contact directory of the Information Technology Services Team, click here.
+          </Link>
+          </Col>
+          <Col md="1">
+          </Col>
           </Row>
-        </Container>
+      </Container>
+    </Container>
     </>
   );
 }
