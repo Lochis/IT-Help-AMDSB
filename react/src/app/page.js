@@ -21,7 +21,7 @@ export default function Home() {
           progressive technologies in our classrooms of today and tomorrow.
         </p>
 
-        <h3>The Information Technology Services Team is responsible for:</h3>
+        <h3 className="lead">The Information Technology Services Team is responsible for:</h3>
         <ul>
           <li>Technology planning and management</li>
           <li>Technology support and repairs</li>

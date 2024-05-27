@@ -17,8 +17,7 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <head/>
-      <body className={inter.className}>
+      <body className="bg-body-secondary">
       <ThemeProvider attribute="data-bs-theme" storageKey="theme">
         <Navigation />
         {children}

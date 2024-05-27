@@ -35,24 +35,24 @@ export default function Navigation() {
         </Container>
           
           <NavbarCollapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-auto gap-lg-4 gap-md-2 gap-sm-none">
               <NavLink href="ithelp">
-                <Image width="70" height="70" src="/navigation/training.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/training.png" style={{borderRadius: 12}}></Image>
               </NavLink>
               <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
-                <Image width="70" height="70" src="/navigation/guidelines.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/guidelines.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
                 <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
-                <Image width="70" height="70" src="/navigation/topdesk_staff.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/topdesk_staff.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
                 <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
-                <Image width="70" height="70" src="/navigation/board_approved_apps.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/board_approved_apps.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
                 <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
-                <Image width="70" height="70" src="/navigation/pricelist.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/pricelist.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
                 <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
-                <Image width="70" height="70" src="/navigation/purchasing.png" style={{borderRadius: 12}}></Image>
+                <Image width="75" height="75" src="/navigation/purchasing.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
             </Nav>
           </NavbarCollapse>
