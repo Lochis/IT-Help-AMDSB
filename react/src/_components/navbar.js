@@ -36,23 +36,26 @@ export default function Navigation() {
           
           <NavbarCollapse id="basic-navbar-nav">
             <Nav className="mx-auto gap-lg-4 gap-md-2 gap-sm-none">
-              <NavLink href="ithelp">
+              <NavLink  href="ithelp">
                 <Image width="75" height="75" src="/navigation/training.png" style={{borderRadius: 12}}></Image>
               </NavLink>
-              <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+              <NavLink target="_blank" href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
                 <Image width="75" height="75" src="/navigation/guidelines.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
-                <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                <NavLink target="_blank" href="https://amdsb.topdesk.net/tas/public/login/saml">
                 <Image width="75" height="75" src="/navigation/topdesk_staff.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
-                <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                <NavLink target="_blank" href="/apps/">
                 <Image width="75" height="75" src="/navigation/board_approved_apps.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
-                <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                <NavLink target="_blank" href="https://amdsb.sharepoint.com/:b:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines/IT%20Price%20List.pdf">
                 <Image width="75" height="75" src="/navigation/pricelist.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
-                <NavLink href="https://amdsb.sharepoint.com/:f:/r/sites/Info/SSS/Documents/IT%20Information%20%26%20Resources/IT%20Guidelines?csf=1&web=1&e=I7xhmB">
+                <NavLink href="https://amdsb.topdesk.net/tas/public/ssp/content/detail/service?unid=b7543fd1eb69438093e2868f8daa6c89&from=3ef637ee-e66e-474d-9f94-1988887534d4">
                 <Image width="75" height="75" src="/navigation/purchasing.png" style={{borderRadius: 12}}></Image>
+                </NavLink>
+                <NavLink href="/reset/">
+                <Image width="75" height="75" src="/navigation/passwordreset.png" style={{borderRadius: 12}}></Image>
                 </NavLink>
             </Nav>
           </NavbarCollapse>

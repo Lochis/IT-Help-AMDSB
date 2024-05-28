@@ -33,7 +33,7 @@ export default function Wireless() {
             </p>
 
             <h4 id="AMDSB-devices-only-badge">
-                <Badge bg="danger" pill>AMDSB-IOS and AMDSB-CHROME are for AMDSB owned devices only!</Badge>
+                <Badge bg="danger">AMDSB-IOS and AMDSB-CHROME are for AMDSB owned devices only!</Badge>
             </h4>
 
             <p>
@@ -49,7 +49,7 @@ export default function Wireless() {
                         <h5>Turn Off InPrivate Wi-Fi</h5> 
                     </AccordionHeader>
                     <AccordionBody className="bg-body-secondary">
-                        <h4><Badge bg="secondary" pill>IOS</Badge></h4>
+                       <h4><Badge bg="secondary">IOS</Badge></h4>
                         <ListGroup as="ol" numbered>
                             <ListGroupItem>Go to Settings
                                 <img src="/ithelp/wireless/turn_off_inprivate/ios_settings.png" alt="ios-settings" />
@@ -59,7 +59,7 @@ export default function Wireless() {
                         </ListGroup>
                         <hr />
                         <h4>
-                            <Badge bg="success" pill>Android</Badge>
+                            <Badge bg="success">Android</Badge>
                         </h4>
                         <ListGroup as="ol" numbered>
                             <ListGroupItem>

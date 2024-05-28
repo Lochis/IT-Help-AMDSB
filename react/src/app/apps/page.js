@@ -2,7 +2,7 @@ import Image from "next/image";
 import '../page.css';
 import { Button, Card, CardBody, CardText, Container, Row } from "react-bootstrap";
 
-export default function Reset() {
+export default function Apps() {
   return (
     <>
       <Container fluid="sm" className="text-center pt-5" style={{maxWidth:'750px'}}>

@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
 import { Button, Card, CardBody, CardText, Container, Row, Col, Carousel } from "react-bootstrap";
+import './page.css';
 
 export default function Home() {
   return (
     <>
-    <Container fluid='sm' className="pt-5">
+    <Container fluid='sm' className="pt-5 pb-4">
       <Container className="d-xs-none d-md-block">
         <Row>
           <Col md="1">
@@ -21,7 +21,9 @@ export default function Home() {
           progressive technologies in our classrooms of today and tomorrow.
         </p>
 
-        <h3 className="lead">The Information Technology Services Team is responsible for:</h3>
+        <br></br>
+
+        <h3 className="">The Information Technology Services Team is responsible for:</h3>
         <ul>
           <li>Technology planning and management</li>
           <li>Technology support and repairs</li>
