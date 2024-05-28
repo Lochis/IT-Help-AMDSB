@@ -3,7 +3,6 @@ import "./globals.css";
 import Navigation from "@/_components/navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from "next-themes";
-import { Container } from "react-bootstrap";
 import Footer from "@/_components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,10 +24,8 @@ export default function RootLayout({ children }) {
         <Footer/>
         </ThemeProvider>
 
-        
-
         <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
-
+       
         <script
           src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
           crossorigin></script>

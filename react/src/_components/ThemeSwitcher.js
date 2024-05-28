@@ -1,4 +1,5 @@
 "use client";
+import '../app/page.css'
 import { useTheme } from 'next-themes';
 import { Dropdown } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
@@ -38,7 +39,7 @@ const ThemeSwitcher = () => {
       </svg>
 
       <Dropdown onSelect={handleSelect} className="bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-        <Dropdown.Toggle variant="light" className="bg-body-tertiary border-0" size="lg" id="theme">
+        <Dropdown.Toggle variant="light" className="bg-body-tertiary border-0 theme-dropdown" size="lg" id="theme">
           {theme === 'light' ? (
             <svg className="bi me-2 theme-icon" width="1em" height="1em">
               <use href="#sun" />

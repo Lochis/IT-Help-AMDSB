@@ -2,6 +2,62 @@ body {
   font-size: 1.2em;
 }
 
+:root {
+  color-scheme: light dark;
+  --icon-color-light: black;
+  --icon-color-dark: white;
+}
+
+[data-bs-theme="light"] .theme-icon {
+  fill: var(--icon-color-light);
+}
+
+[data-bs-theme="light"] .theme-dropdown {
+  color: var(--icon-color-light);
+}
+
+[data-bs-theme="dark"] .theme-icon {
+  fill: var(--icon-color-dark);
+}
+
+[data-bs-theme="dark"] .theme-dropdown {
+  color: var(--icon-color-dark);
+}
+
+[data-bs-theme="system"] .theme-icon {
+  fill: currentColor;
+}
+
+#appList {
+  transition: 200ms;
+}
+
+.data-table * {
+  color: black;
+  font-size: medium;
+}
+
+.data-table a {
+  color: blue;
+  transition: 300ms;
+}
+
+.sc-hzhKNl,
+.BAfJj,
+.sc-fUnNpA,
+.kBvXce {
+  background-color: light-dark(#e9ecef, #343a40) !important;
+}
+
+option {
+  color: black !important;
+}
+
+a:hover {
+  color: light-dark(black, white);
+  transition: 300ms;
+}
+
 .resetbtn {
   font-size: 1em;
 }
