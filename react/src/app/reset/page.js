@@ -9,13 +9,13 @@ export default function Reset() {
         <Card>
         <CardBody>
           <CardText>
-          <h4>
+          <span className="fw-bold">
             Self Service Password Reset (SSPR)
             <br></br>
             and
             <br></br>
             Multi-Factor Authentication (MFA)
-            </h4>
+            </span>
           
             <br></br>
 
