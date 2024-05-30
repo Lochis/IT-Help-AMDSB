@@ -7,7 +7,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Container className="pt-4 pb-3 d-sm-block d-none bg-body-tertiary" fluid>
+      <Container className="pt-4 pb-2 d-sm-block d-none bg-body-tertiary border-bottom border-3 border-primary" fluid>
         <Container>
       <div className="d-flex flex-row gap-3">
         <Link href="/" className="me-auto text-decoration-none">
@@ -23,7 +23,7 @@ export default function Navigation() {
         </Container>
       </Container>
 
-      <Navbar expand="sm" className="bg-body-secondary shadow">
+      <Navbar expand="sm" className="bg-body-tertiary shadow-sm">
         <Container className="d-flex flex-row d-md-none d-lg-none d-sm-none">
         <Link href="/" className="me-auto text-decoration-none">
           <div className="d-flex flex-row gap-2">

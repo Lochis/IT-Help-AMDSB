@@ -20,7 +20,7 @@ export default function Duo() {
                 of the app and should do that if asked.
             </p>
 
-            <p>{"If your cell phone does not support Duo Mobile, please submit a TOPDesk ticket under “Submit a Ticket > MFA > Cannot Use Duo Mobile App” and ignore the enrollment email."}</p>
+            <p>{"If your cell phone does not support Duo Mobile, please submit a TOPDesk ticket under "} <span className="text-primary">Submit a Ticket {">"} MFA {">"} Cannot Use Duo Mobile App</span> {" and ignore the enrollment email."}</p>
 
 
             <Accordion>
@@ -137,7 +137,7 @@ export default function Duo() {
 
                                                 </Row>
                                                 <CardFooter>
-                                                You will need to enter the code into the <span className="text-primary">Passcode</span> box
+                                                    You will need to enter the code into the <span className="text-primary">Passcode</span> box
                                                 </CardFooter>
                                             </Card>
                                         </Col>
@@ -160,7 +160,7 @@ export default function Duo() {
 
                                                 </Row>
                                                 <CardFooter>
-                                                You will need to enter the code into the <span className="text-primary">Passcode</span> box
+                                                    You will need to enter the code into the <span className="text-primary">Passcode</span> box
                                                 </CardFooter>
                                             </Card>
                                         </Col>
@@ -241,6 +241,87 @@ export default function Duo() {
                             </ListGroupItem>
                             <ListGroupItem>
                                 <Badge bg="success"><h6 className="p-0 m-0">You are now set up with Duo MFA!</h6></Badge> Click <span className="text-primary">Log in with Duo</span> to continue and you will receive a prompt on your phone or tablet to approve the login.
+                            </ListGroupItem>
+                        </ListGroup>
+                    </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey={2}>
+                    <AccordionHeader className="aHeader">
+                        <h5>Change your Device</h5>
+                    </AccordionHeader>
+                    <AccordionBody className="bg-body-secondary">
+                        <h4><Badge bg="danger" className="text-wrap">If you have requested a hardware token, please ignore these steps.</Badge></h4>
+                        <ListGroup as="ol" numbered>
+                            <ListGroupItem>
+                            <span className="text-primary">On a computer outside of AMDSB’s network</span> login to an AMDSB site like <a href="https://amdsb.elearningontario.ca/d2l/home">The Core</a>. 
+                            </ListGroupItem>
+                            <ListGroupItem>
+                            When you see the Duo prompt for login press <span className="text-primary">Other options</span>. 
+                            <br/>
+                            If you don’t see the prompt try logging in to a different browser or using incognito mode.
+                            <br/>
+                            <img src="/ithelp/duo/change_your_device/1.png" alt="check for duo push notification"/>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                At the bottom, choose <span className="text-primary">Manage Devices</span>
+                                <br/>
+                                <img src="/ithelp/duo/change_your_device/2.png" alt="manage devices in duo"/>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                Verify your identity with your old device by sending a duo push. 
+                                <br/>
+                                <span className="text-primary">Approve</span> the push on your phone or tablet.
+                                <br/>
+                                <img src="/ithelp/duo/change_your_device/3.png" alt="verify identify by sending duo push"/>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                            If you got a new cell phone number, press <span className="text-primary">Add a device</span> from the Duo selection and choose to set up <span className="text-primary">Duo Mobile</span>. 
+                            <br/>
+                            Follow steps 4 - 10 in <span className="text-danger">First Time Setup</span> then come back.
+                            <br/> <Badge bg="danger">If you have the same number, skip to step 6.</Badge>
+                            <br/>
+                            <img src="/ithelp/duo/change_your_device/4.png" alt="add a device option highlighted"/>
+                            <br/>
+                            After completing the set up, delete your old phone from the Duo portal. 
+                            <br/>
+                            You have now changed your Duo MFA device!
+                            <br/>
+                            <img src="/ithelp/duo/change_your_device/5.png" alt="delete old device from portal"/>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                If you have the same number as before, choose <span className="text-primary">I have a new phone</span> and click <span className="text-primary">Get started</span>. 
+                                <br/>
+                                <img src="/ithelp/duo/change_your_device/6.png" alt="if have the same number, click get started"/>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                            Download the Duo app on your mobile device. 
+                            <br/>
+                            It can be found in your device's app store titled <span className="text-primary">Duo Mobile</span>.
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                You will be asked to scan the barcode. 
+                                <br/>
+                                Open the Duo app on your new phone and press <span className="text-primary">Continue</span> on the welcome screen. 
+                                <br/>Select <span className="text-primary">Use a QR code</span> to add an account.
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                    Scan the barcode on your computer with your phone or tablet. 
+                                    <br/>
+                                    <i>If the app prompts that it needs access to your camera select <span className="text-primary">allow</span>.</i>
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                After scanning the QR code, tap <span className="text-primary">Next</span> in your app to give your account a name. 
+                                <br/>
+                                Leave the default of <span className="text-primary">Avon Maitland District School Board</span> and tap <span className="text-primary">Save</span>.
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                Run through the practice exercise and remaining setup to your preference. 
+                                <br/>
+                                <Badge bg="danger" className="text-wrap">We recommend allowing notifications when asked during the setup to make the experience as simple as possible.</Badge>
+
+                            </ListGroupItem>
+                            <ListGroupItem>
+                            <Badge bg="success" className="text-wrap float-right">You have now changed your Duo MFA device!</Badge>
                             </ListGroupItem>
                         </ListGroup>
                     </AccordionBody>

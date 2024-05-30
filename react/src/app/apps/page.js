@@ -1,7 +1,7 @@
 "use client";
 import '../page.css';
 import { useState, useEffect } from "react";
-import { Badge, InputGroup, FormControl, Col, Container, Row, Spinner} from "react-bootstrap";
+import { Badge, InputGroup, FormControl, Col, Container, Row, Spinner, FloatingLabel } from "react-bootstrap";
 import InputGroupText from 'react-bootstrap/esm/InputGroupText';
 import appData from '@/api/appData.json';
 import styled from 'styled-components';
@@ -15,6 +15,14 @@ export default function Apps() {
   const [pending, setPending] = useState(true);
   const [rows, setRows] = useState([]);
   const [search, setSearch] = useState("");
+
+  const customStyles = {
+    pagination: {
+      style: {
+        borderRadius: '0 0 20px 20px',
+      }
+    }
+  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -115,9 +123,9 @@ export default function Apps() {
 
   return (
     <>
-      <Container fluid>
-        <Container className='pb-4'>
-          <h1 className="display-6 pt-2"><b>Approved AMDSB Online Tools</b></h1>
+      <Container fluid className='pt-3'>
+        <Container fluid className='p-4 pt-0 mb-3 rounded-3 bg-body-tertiary'>
+          <h1 className="display-6"><b>Approved AMDSB Online Tools</b></h1>
           <p>
             The AMDSB Online Tools database changes frequently.
             <br />
@@ -137,40 +145,38 @@ export default function Apps() {
           <br />
           <span className='align-top'><Badge bg="danger" style={{ minWidth: '60px' }}><h6 className='p-0 m-0'>Red</h6></Badge> Cannot be used within AMDSB</span>
         </Container>
-        <Row>
-          <Col lg="1">
-          </Col>
-          <Col>
-          <Row className='d-flex flex-row-reverse'>
+
+        <Row className='d-flex flex-row-reverse pb-1'>
             <Col md="6" lg="4">
-            <InputGroup data-bs-theme="light">
-              <InputGroupText id="search-addon">Search</InputGroupText>
-              <FormControl
-                placeholder="Application"
-                aria-label="Search"
-                aria-describedby="search-addon"
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </InputGroup>
+              <InputGroup data-bs-theme="light">
+                <InputGroupText id="search-addon" className='rounded-start-4'>Search</InputGroupText>
+                  <FormControl
+                    className='rounded-end-4'
+                    placeholder="Application"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+              </InputGroup>
             </Col>
           </Row>
-         
-            <DataTable
-              className="data-table bg-body-tertiary pt-1"
-              conditionalRowStyles={conditionalRowStyles}
-              columns={headers}
-              data={rows}
-              progressPending={pending}
-              progressComponent={<div className='text-center'><Spinner animation="border" variant="success" /></div>}
-              pagination
-              responsive
-              id="appList" />
-          </Col>
-          <Col lg="1">
-          </Col>
-        </Row>
+        <Container fluid className='rounded-4 bg-secondary-subtle p-3'>
+          
 
+          <DataTable
+            className="data-table rounded-top-4 rounded-bottom-0 bg-body-tertiary"
+            conditionalRowStyles={conditionalRowStyles}
+            columns={headers}
+            data={rows}
+            progressPending={pending}
+            progressComponent={<div className='text-center'><Spinner className='rounded-4' animation="border" variant="success" /></div>}
+            pagination
+            responsive
+            customStyles={customStyles}
+            id="appList" />
+        </Container>
       </Container>
+
 
     </>
   );

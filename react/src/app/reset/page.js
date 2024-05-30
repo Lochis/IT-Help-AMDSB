@@ -5,7 +5,7 @@ import { Button, Card, CardBody, CardText, Container, Row } from "react-bootstra
 export default function Reset() {
   return (
     <>
-      <Container fluid="sm" className="text-center pt-5" style={{maxWidth:'750px'}}>
+      <Container fluid="sm" className="text-center pt-5 pb-4" style={{maxWidth:'750px'}}>
         <Card>
         <CardBody>
           <CardText>

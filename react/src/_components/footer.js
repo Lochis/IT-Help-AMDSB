@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="pt-3">
             
         </div>
-            <Container className="text-center py-4 shadow" fluid>
-                <h5>
+            <Container className="text-center py-4 shadow shadow border-primary border-top border-bottom border-3" fluid>
+                
+                <h5 className="pb-0 mb-0">
                     <Link href="https://www.amdsb.ca/">Avon Maitland District School Board</Link>
                     <br></br>
                     62 Chalk Street
@@ -22,7 +23,7 @@ export default function Footer() {
                     519-527-0111 or 1-800-592-5437
                     <br></br>
                 </h5>
-                <p>© {currentDate.substring(currentDate.length - 4)}</p>
+                © {currentDate.substring(currentDate.length - 4)}
             </Container>
         </>
     );

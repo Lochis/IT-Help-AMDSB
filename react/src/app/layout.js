@@ -18,9 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-body-secondary">
       <ThemeProvider attribute="data-bs-theme" storageKey="theme">
+        <div style={{minHeight: '75vh'}}>
         <Navigation />
         {children}
         
+        </div>
         <Footer/>
         </ThemeProvider>
 

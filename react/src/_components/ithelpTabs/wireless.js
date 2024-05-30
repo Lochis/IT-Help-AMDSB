@@ -33,7 +33,7 @@ export default function Wireless() {
             </p>
 
             <h4 id="AMDSB-devices-only-badge">
-                <Badge bg="danger">AMDSB-IOS and AMDSB-CHROME are for AMDSB owned devices only!</Badge>
+                <Badge bg="danger" className="text-wrap">AMDSB-IOS and AMDSB-CHROME are for AMDSB owned devices only!</Badge>
             </h4>
 
             <p>

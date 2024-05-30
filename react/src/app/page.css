@@ -8,6 +8,11 @@ body {
   --icon-color-dark: white;
 }
 
+.nav-pill-item:active{
+  background-color:#dc3545;
+  color: white;
+}
+
 [data-bs-theme="light"] .theme-icon {
   fill: var(--icon-color-light);
 }
@@ -32,6 +37,10 @@ body {
   transition: 200ms;
 }
 
+.data-table {
+  background-color: rgb(255,255,255);
+}
+
 .data-table * {
   color: black;
   font-size: medium;
@@ -46,7 +55,7 @@ body {
 .BAfJj,
 .sc-fUnNpA,
 .kBvXce {
-  background-color: light-dark(#e9ecef, #343a40) !important;
+  background-color: light-dark(#E2E3E5, #343a40) !important;
 }
 
 option {
