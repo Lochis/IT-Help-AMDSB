@@ -7,7 +7,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Container className="pt-4 pb-2 d-sm-block d-none bg-body-tertiary border-bottom border-3 border-primary" fluid>
+      <Container className="pt-4 pb-2 d-sm-block d-none bg-body-tertiary border-bottom border-3 border-primary-subtle" fluid>
         <Container>
       <div className="d-flex flex-row gap-3">
         <Link href="/" className="me-auto text-decoration-none">

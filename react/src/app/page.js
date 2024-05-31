@@ -6,8 +6,8 @@ import './page.css';
 export default function Home() {
   return (
     <>
-    <Container fluid='sm' className="pt-3 pb-4">
-      <Container className="d-xs-none d-md-block bg-body-tertiary p-4 rounded-3">
+    <Container fluid='sm' className="pt-3 pb-4 d-flex">
+      <Container className="d-xs-none d-md-block bg-body-tertiary p-4 rounded-3" >
         <Row>
           <Col md="1">
           </Col>

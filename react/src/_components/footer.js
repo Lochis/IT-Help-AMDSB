@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="pt-3">
             
         </div>
-            <Container className="text-center py-4 shadow shadow border-primary border-top border-bottom border-3" fluid>
+            <Container className="text-center py-4 shadow shadow border-primary-subtle border-top border-bottom border-3" fluid>
                 
                 <h5 className="pb-0 mb-0">
                     <Link href="https://www.amdsb.ca/">Avon Maitland District School Board</Link>
