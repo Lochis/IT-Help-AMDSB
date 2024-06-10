@@ -17,8 +17,8 @@ export default function Topdesk() {
                     <AccordionBody className="">
                         <ListGroup as="ol" numbered>
                             <ListGroupItem>
-                            Login to TOPdesk by clicking the icon on the <a href="https://amdsb.elearningontario.ca/d2l/home/14237587" alt="link to Information Technology Services department page in the core">
-                                Information Technology Services</a> page in The Core
+                            Login to TOPdesk by clicking the icon above or by going to <a href="https://amdsb.topdesk.net/tas/public/login/saml" alt="link to Information Technology Services department page in the core">
+                            this link</a>.
                             </ListGroupItem>
                             <ListGroupItem>
                             You should be automatically logged in and see the TOPdesk homepage. 

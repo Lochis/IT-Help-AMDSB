@@ -5,6 +5,7 @@ import { Button, Card, CardBody, CardText, Col, Container, Row, Tab, TabContaine
 import Wireless from "@/_components/ithelpTabs/wireless";
 import Duo from "@/_components/ithelpTabs/duo";
 import Topdesk from "@/_components/ithelpTabs/topdesk";
+import Other from "@/_components/ithelpTabs/other";
 
 
 export default function Ithelp() {
@@ -13,9 +14,9 @@ export default function Ithelp() {
   <Container fluid>
       <TabContainer id="how-do-i" defaultActiveKey="wireless">
         <Row className="pt-4">
-          <Col sm="12" lg="1">
+          <Col sm="12" md="0" lg="1">
           </Col>
-          <Col sm="12" lg="2">
+          <Col sm="12" md="4" lg="2">
             <Container fluid className="pb-3 bg-body-tertiary pt-3 rounded-3 border mb-4" >
             <h4 id="how-do-i-subtitle">How Do I?</h4>
             
@@ -36,7 +37,7 @@ export default function Ithelp() {
             </Container>
           </Col>
 
-          <Col sm="12" lg="6">
+          <Col sm="12" md="8" lg="6">
             <TabContent className="rounded-3 border p-4 pt-3 bg-body-tertiary" style={{minHeight: '32vh'}}>
               <TabPane eventKey="wireless">
                 <h2 class="text-primary display-6">Wireless</h2>
@@ -63,11 +64,24 @@ export default function Ithelp() {
                     <h2 class="text-primary display-6">TOPdesk</h2>
                   </Col>
                   <Col className="col-auto">
-                    <img class="flex-end" width="75" height="75" src="/ithelp/topdesk/Topdesk_button.png" />
+                    <img class="flex-end" width="75" height="75" src="/ithelp/topdesk/TOPdesk_button.png" />
                   </Col>
                 </Row>
 
                 <Topdesk/>
+
+              </TabPane>
+              <TabPane eventKey="other">
+                <Row className="align-items-center">
+                  <Col className="me-auto">
+                    <h2 class="text-primary display-6">Other</h2>
+                  </Col>
+                  <Col className="col-auto">
+                    {/*<img class="flex-end" width="75" height="75" src="/ithelp/topdesk/TOPdesk_button.png" />*/}
+                  </Col>
+                </Row>
+
+                <Other/>
 
               </TabPane>
             </TabContent>
