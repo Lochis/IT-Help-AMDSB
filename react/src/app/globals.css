@@ -21,13 +21,6 @@ svg {
   max-height: 50px;
 }
 
-.nav-link:hover{
-  color: #e9ecef;
-}
-
-.nav-link {
-  color: black;
-}
 
 header h1 {
   font-size:32px;
