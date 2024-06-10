@@ -16,7 +16,7 @@ export default function Ithelp() {
           <Col sm="12" lg="1">
           </Col>
           <Col sm="12" lg="2">
-            <Container fluid className="pb-3 bg-body-tertiary pt-3 rounded-3 border mb-4" style={{minHeight: '32vh'}}>
+            <Container fluid className="pb-3 bg-body-tertiary pt-3 rounded-3 border mb-4" >
             <h4 id="how-do-i-subtitle">How Do I?</h4>
             
             <Nav variant="pills" className="flex-column border-bottom border-top border-primary border-2 pt-2 pb-2">
