@@ -51,6 +51,11 @@ body {
   transition: 300ms;
 }
 
+.data-table a:hover {
+  color: light-dark(black, white);
+  transition: 300ms;
+}
+
 .sc-hzhKNl,
 .BAfJj,
 .sc-fUnNpA,
@@ -60,11 +65,6 @@ body {
 
 option {
   color: black !important;
-}
-
-a:hover {
-  color: light-dark(black, white);
-  transition: 300ms;
 }
 
 .resetbtn {
