@@ -1,6 +1,9 @@
 # AMDSB Information Technology Services Website
 #### Currently at https://ambitious-tree-010e4820f.5.azurestaticapps.net/
 #### To replace old no-framework HTML, CSS, JS site: https://reset.amdsb.ca
+
+## Currently freehosting. Slow to load.
+
 ## Tech Stack
 - Next.JS
 - React-Bootstrap
